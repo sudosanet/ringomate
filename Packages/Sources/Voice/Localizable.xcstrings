@@ -1,0 +1,26 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Could not unpack the voice models" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "声のモデルを展開できませんでした"
+          }
+        }
+      }
+    },
+    "The downloaded file is damaged" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ダウンロードしたファイルが壊れています"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

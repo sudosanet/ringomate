@@ -1,0 +1,18 @@
+name = "nte"
+match_comment = ["异环", "異環", "矩阵映画", "Hotta"]
+match_text = ["异环", "異環", "矩阵映画", "Hotta", "Neverness"]
+match_texture = ["T_player_"]
+face_materials = ["面"]
+face_contains = ["脸"]
+# 「体」は服のテクスチャ名（体.png など）にも当たるので入れない。
+hidden_removal = ["肌", "皮肤", "skin", "Skin", "素体"]
+
+[physics]
+loosen = ["q_"]
+loosen_degrees = 25
+
+[ramp]
+day = [0.86, 0.80, 0.84]
+night = [0.74, 0.76, 0.90]
+softness = 0.06
+replaces_toon = false

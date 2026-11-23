@@ -1,0 +1,7 @@
+# 規約上リポジトリには入れない。配布元の ZIP から Tsukuyomi.vrm・ReadMe.txt・利用規約.txt をここへ（README）
+name = "つくよみちゃん公式3Dモデル タイプA（通常版・輪郭線なし）"
+source = "https://tyc.rei-yumesaki.net/material/avatar/3d-a/"
+author = "夢前黎（Rei Yumesaki）"
+spdx = "LicenseRef-Tsukuyomichan-Character-License"
+credit = "本ソフトウェアでは、フリー素材キャラクター「つくよみちゃん」（© Rei Yumesaki）を使用しています。本ソフトウェアに収録されているつくよみちゃんの3Dモデルの利用規約は、「つくよみちゃん公式3Dモデル タイプA」の利用規約（https://tyc.rei-yumesaki.net/material/avatar/3d-a/）に準じます。"
+note = "つくよみちゃんキャラクターライセンス（https://tyc.rei-yumesaki.net/about/terms/）。本ソフトウェアで、つくよみちゃんを使ったコンテンツを公開するときは、この規約に従ってください。商用も可、クレジット必須、VRoid Hub での配布は禁止。"

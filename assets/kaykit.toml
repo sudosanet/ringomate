@@ -1,0 +1,13 @@
+# サブモジュール assets/kaykit のうち、files だけをアプリに入れる
+name = "KayKit Furniture Bits"
+source = "https://github.com/KayKit-Game-Assets/KayKit-Furniture-Bits-1.0"
+author = "Kay Lousberg"
+spdx = "CC0-1.0"
+credit = "KayKit : Furniture Bits by Kay Lousberg (www.kaylousberg.com, CC0)"
+files = [
+  "addons/kaykit_furniture_bits/Assets/gltf/cactus_medium_A.gltf",
+  "addons/kaykit_furniture_bits/Assets/gltf/cactus_medium_A.bin",
+  "addons/kaykit_furniture_bits/Assets/gltf/rug_oval_B.gltf",
+  "addons/kaykit_furniture_bits/Assets/gltf/rug_oval_B.bin",
+  "addons/kaykit_furniture_bits/Assets/gltf/furniturebits_texture.png",
+]

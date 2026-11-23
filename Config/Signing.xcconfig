@@ -1,0 +1,2 @@
+// 署名のチームは各自の Local.xcconfig に書く（コミットしない）: DEVELOPMENT_TEAM = XXXXXXXXXX
+#include? "Local.xcconfig"

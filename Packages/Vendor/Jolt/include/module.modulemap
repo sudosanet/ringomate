@@ -1,0 +1,2 @@
+// Swift からは使わない（C の窓口は CJolt）
+module Jolt {}

@@ -1,0 +1,7 @@
+# NTE 安魂曲: フード（后领・衣领）の見た目は剛体より大きく、黒髪のテールの先がフードの中に埋もれる。
+name = "lacrimosa"
+match_name = ["安魂曲_ Apose調整版"]
+
+[physics]
+hair_colliders = ["后领2-1", "后领3-1", "右衣领-1"]
+hair_collider_scale = 2

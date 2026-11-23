@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "ringomate": {
+      "command": "${CLAUDE_PLUGIN_ROOT}/bin/mascot-hook",
+      "args": [
+        "mcp"
+      ]
+    }
+  }
+}

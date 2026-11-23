@@ -1,0 +1,237 @@
+# サブモジュール assets/cmu のうち、files だけをアプリに入れる
+name = "CMU Graphics Lab Motion Capture Database（BVH: Bruce Hahne の変換）"
+source = "https://github.com/una-dinosauria/cmu-mocap"
+author = "Carnegie Mellon University Graphics Lab（BVH 変換: Bruce Hahne）"
+spdx = "LicenseRef-CMU-Mocap"
+credit = "The data used in this project was obtained from mocap.cs.cmu.edu. The database was created with funding from NSF EIA-0196217."
+note = "研究・商用とも自由に使える（READMEFIRST.txt）。仕草の図鑑に、その場でできる仕草（笑う・あくびと伸び・いないいないばあ・カーテシー・肩をすくめる・寒がる・楽器のまね・動物のまね・ダンスなど）を読み込み時にリターゲットして足す。いちばん動いている数秒を切り出す。"
+files = [
+  "READMEFIRST.txt",
+  "data/141/141_13.bvh",
+  "data/143/143_30.bvh",
+  "data/111/111_32.bvh",
+  "data/113/113_23.bvh",
+  "data/141/141_16.bvh",
+  "data/143/143_25.bvh",
+  "data/111/111_37.bvh",
+  "data/113/113_27.bvh",
+  "data/141/141_18.bvh",
+  "data/143/143_33.bvh",
+  "data/111/111_16.bvh",
+  "data/113/113_12.bvh",
+  "data/141/141_21.bvh",
+  "data/111/111_25.bvh",
+  "data/113/113_16.bvh",
+  "data/141/141_22.bvh",
+  "data/141/141_24.bvh",
+  "data/141/141_26.bvh",
+  "data/111/111_04.bvh",
+  "data/113/113_03.bvh",
+  "data/141/141_27.bvh",
+  "data/111/111_14.bvh",
+  "data/141/141_20.bvh",
+  "data/141/141_06.bvh",
+  "data/143/143_08.bvh",
+  "data/141/141_10.bvh",
+  "data/143/143_34.bvh",
+  "data/143/143_35.bvh",
+  "data/143/143_36.bvh",
+  "data/111/111_05.bvh",
+  "data/113/113_04.bvh",
+  "data/111/111_38.bvh",
+  "data/113/113_28.bvh",
+  "data/079/79_68.bvh",
+  "data/080/80_41.bvh",
+  "data/079/79_69.bvh",
+  "data/080/80_43.bvh",
+  "data/079/79_70.bvh",
+  "data/080/80_44.bvh",
+  "data/013/13_14.bvh",
+  "data/014/14_17.bvh",
+  "data/079/79_71.bvh",
+  "data/079/79_72.bvh",
+  "data/080/80_45.bvh",
+  "data/079/79_73.bvh",
+  "data/079/79_74.bvh",
+  "data/080/80_48.bvh",
+  "data/079/79_88.bvh",
+  "data/079/79_94.bvh",
+  "data/079/79_81.bvh",
+  "data/079/79_84.bvh",
+  "data/079/79_38.bvh",
+  "data/079/79_41.bvh",
+  "data/013/13_07.bvh",
+  "data/079/79_15.bvh",
+  "data/079/79_17.bvh",
+  "data/080/80_36.bvh",
+  "data/079/79_18.bvh",
+  "data/080/80_13.bvh",
+  "data/079/79_19.bvh",
+  "data/080/80_70.bvh",
+  "data/079/79_28.bvh",
+  "data/080/80_22.bvh",
+  "data/079/79_36.bvh",
+  "data/079/79_43.bvh",
+  "data/079/79_31.bvh",
+  "data/080/80_14.bvh",
+  "data/079/79_78.bvh",
+  "data/079/79_89.bvh",
+  "data/079/79_58.bvh",
+  "data/080/80_62.bvh",
+  "data/079/79_49.bvh",
+  "data/080/80_54.bvh",
+  "data/079/79_64.bvh",
+  "data/054/54_03.bvh",
+  "data/055/55_18.bvh",
+  "data/079/79_47.bvh",
+  "data/080/80_51.bvh",
+  "data/079/79_52.bvh",
+  "data/028/28_09.bvh",
+  "data/079/79_56.bvh",
+  "data/030/30_22.bvh",
+  "data/079/79_63.bvh",
+  "data/080/80_59.bvh",
+  "data/055/55_03.bvh",
+  "data/055/55_16.bvh",
+  "data/055/55_17.bvh",
+  "data/054/54_10.bvh",
+  "data/055/55_20.bvh",
+  "data/055/55_22.bvh",
+  "data/054/54_16.bvh",
+  "data/055/55_23.bvh",
+  "data/055/55_12.bvh",
+  "data/055/55_27.bvh",
+  "data/055/55_01.bvh",
+  "data/055/55_02.bvh",
+  "data/054/54_17.bvh",
+  "data/054/54_24.bvh",
+  "data/054/54_12.bvh",
+  "data/026/26_07.bvh",
+  "data/013/13_26.bvh",
+  "data/015/15_08.bvh",
+  "data/062/62_14.bvh",
+  "data/062/62_12.bvh",
+  "data/042/42_01.bvh",
+  "data/137/137_03.bvh",
+  "data/137/137_23.bvh",
+  "data/137/137_21.bvh",
+  "data/137/137_19.bvh",
+  "data/137/137_07.bvh",
+  "data/137/137_41.bvh",
+  "data/137/137_32.bvh",
+]
+
+# 図鑑での名前（内容:演じ分け）
+[gestures]
+"data/141/141_13.bvh" = "stretch-yawn:tired"
+"data/143/143_30.bvh" = "stretch-yawn:tired"
+"data/111/111_32.bvh" = "stretch-yawn:exhausted"
+"data/113/113_23.bvh" = "stretch-yawn:tired"
+"data/141/141_16.bvh" = "wave-hello:happy"
+"data/143/143_25.bvh" = "wave-hello:youthful"
+"data/111/111_37.bvh" = "wave-hello:feminine"
+"data/113/113_27.bvh" = "wave-hello:normal"
+"data/141/141_18.bvh" = "peekaboo:childish"
+"data/143/143_33.bvh" = "peekaboo:childish"
+"data/111/111_16.bvh" = "peekaboo:happy"
+"data/113/113_12.bvh" = "peekaboo:childish"
+"data/141/141_21.bvh" = "shrug:normal"
+"data/111/111_25.bvh" = "shrug:not-confident"
+"data/113/113_16.bvh" = "shrug:normal"
+"data/141/141_22.bvh" = "high-five:happy"
+"data/141/141_24.bvh" = "high-five-low:active"
+"data/141/141_26.bvh" = "curtsey:feminine"
+"data/111/111_04.bvh" = "curtsey:feminine"
+"data/113/113_03.bvh" = "curtsey:proud"
+"data/141/141_27.bvh" = "mope:sad"
+"data/111/111_14.bvh" = "mope:sad"
+"data/141/141_20.bvh" = "waiting:normal"
+"data/141/141_06.bvh" = "jump-twist:active"
+"data/143/143_08.bvh" = "jump-twist:active"
+"data/141/141_10.bvh" = "toss-catch:active"
+"data/143/143_34.bvh" = "chicken-dance:musical"
+"data/143/143_35.bvh" = "macarena:musical"
+"data/143/143_36.bvh" = "airplane:childish"
+"data/111/111_05.bvh" = "dance:musical"
+"data/113/113_04.bvh" = "dance:happy"
+"data/111/111_38.bvh" = "yoga:normal"
+"data/113/113_28.bvh" = "yoga:normal"
+"data/079/79_68.bvh" = "cold:sad"
+"data/080/80_41.bvh" = "freezing:sad"
+"data/079/79_69.bvh" = "very-happy:happy"
+"data/080/80_43.bvh" = "happy:happy"
+"data/079/79_70.bvh" = "laughing:happy"
+"data/080/80_44.bvh" = "laughing:happy"
+"data/013/13_14.bvh" = "laugh:happy"
+"data/014/14_17.bvh" = "laugh:youthful"
+"data/079/79_71.bvh" = "sad:sad"
+"data/079/79_72.bvh" = "crying:sad"
+"data/080/80_45.bvh" = "crying:sad"
+"data/079/79_73.bvh" = "scared:not-confident"
+"data/079/79_74.bvh" = "upset:angry"
+"data/080/80_48.bvh" = "arguing:angry"
+"data/079/79_88.bvh" = "swat-fly:active"
+"data/079/79_94.bvh" = "flexing:proud"
+"data/079/79_81.bvh" = "brushing-teeth:normal"
+"data/079/79_84.bvh" = "combing-hair:feminine"
+"data/079/79_38.bvh" = "drinking-water:normal"
+"data/079/79_41.bvh" = "sipping-coffee:normal"
+"data/013/13_07.bvh" = "drink-soda:normal"
+"data/079/79_15.bvh" = "eating-sandwich:happy"
+"data/079/79_17.bvh" = "violin:musical"
+"data/080/80_36.bvh" = "violin:musical"
+"data/079/79_18.bvh" = "drums:musical"
+"data/080/80_13.bvh" = "drums:musical"
+"data/079/79_19.bvh" = "piano:musical"
+"data/080/80_70.bvh" = "piano:musical"
+"data/079/79_28.bvh" = "put-on-cap:normal"
+"data/080/80_22.bvh" = "put-on-hat:normal"
+"data/079/79_36.bvh" = "answer-phone:normal"
+"data/079/79_43.bvh" = "painting:normal"
+"data/079/79_31.bvh" = "chalkboard:normal"
+"data/080/80_14.bvh" = "teaching:proud"
+"data/079/79_78.bvh" = "taking-movie:happy"
+"data/079/79_89.bvh" = "holding-baby:feminine"
+"data/079/79_58.bvh" = "bird:childish"
+"data/080/80_62.bvh" = "bird:childish"
+"data/079/79_49.bvh" = "monkey:childish"
+"data/080/80_54.bvh" = "monkey:childish"
+"data/079/79_64.bvh" = "penguin:childish"
+"data/054/54_03.bvh" = "penguin:childish"
+"data/055/55_18.bvh" = "penguin:childish"
+"data/079/79_47.bvh" = "chicken:childish"
+"data/080/80_51.bvh" = "chicken:childish"
+"data/079/79_52.bvh" = "prairie-dog:childish"
+"data/028/28_09.bvh" = "prairie-dog:childish"
+"data/079/79_56.bvh" = "t-rex:childish"
+"data/030/30_22.bvh" = "t-rex:childish"
+"data/079/79_63.bvh" = "tiger:active"
+"data/080/80_59.bvh" = "panther:active"
+"data/055/55_03.bvh" = "genie:childish"
+"data/055/55_16.bvh" = "panda:childish"
+"data/055/55_17.bvh" = "ghost:childish"
+"data/054/54_10.bvh" = "ghost:childish"
+"data/055/55_20.bvh" = "hippo-ballerina:musical"
+"data/055/55_22.bvh" = "superhero:proud"
+"data/054/54_16.bvh" = "superhero:proud"
+"data/055/55_23.bvh" = "devil:childish"
+"data/055/55_12.bvh" = "dancing-bear:musical"
+"data/055/55_27.bvh" = "dancing-ant:musical"
+"data/055/55_01.bvh" = "dance-whirl:musical"
+"data/055/55_02.bvh" = "lambada:musical"
+"data/054/54_17.bvh" = "squirrel:childish"
+"data/054/54_24.bvh" = "hummingbird:childish"
+"data/054/54_12.bvh" = "dragon:childish"
+"data/026/26_07.bvh" = "cock-robin:childish"
+"data/013/13_26.bvh" = "direct-traffic:active"
+"data/015/15_08.bvh" = "hand-signals:normal"
+"data/062/62_14.bvh" = "open-umbrella:normal"
+"data/062/62_12.bvh" = "hard-days-drink:tired"
+"data/042/42_01.bvh" = "warm-up:normal"
+"data/137/137_03.bvh" = "cat-wait:childish"
+"data/137/137_23.bvh" = "graceful-wait:feminine"
+"data/137/137_21.bvh" = "graceful-coffee:feminine"
+"data/137/137_19.bvh" = "teen-wait:normal"
+"data/137/137_07.bvh" = "chicken-wait:childish"
+"data/137/137_41.bvh" = "strong-wait:proud"
+"data/137/137_32.bvh" = "old-wait:tired"

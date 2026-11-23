@@ -1,0 +1,6 @@
+# 脚の当たり判定を作者の太さのまま使う。
+name = "legs_as_authored"
+match_name = ["Kinsama式初音ミクV4C", "YYB式初音ミクv1.02", "芙露德利斯", "鳴潮_今汐", "鳴潮_Lily", "Tda式ミク・アペンド"]
+
+[physics]
+leg_collider_scale = 1.0

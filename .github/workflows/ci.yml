@@ -1,0 +1,66 @@
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  DEVELOPER_DIR: /Applications/Xcode_27.2.app/Contents/Developer
+
+jobs:
+  test:
+    runs-on: xcode-27
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          submodules: true
+
+      - name: Assets
+        env:
+          GH_TOKEN: ${{ secrets.ASSETS_TOKEN }}
+          ASSETS_REPO: ${{ secrets.ASSETS_REPO }}
+        run: scripts/fetch-assets.sh
+
+      - name: Lint
+        working-directory: Packages
+        env:
+          # ランナーの ~/.gitconfig の認証を渡すと、公開リポジトリの clone が 403 になる
+          GIT_CONFIG_GLOBAL: /dev/null
+          GIT_CONFIG_NOSYSTEM: "1"
+        run: swift package plugin --allow-writing-to-package-directory swiftlint --strict
+
+      # 端末内の AI・日本語の声を使うテストは手元の Mac だけで回す（ランナーにはない）
+      - name: Test
+        working-directory: Packages
+        env:
+          GIT_CONFIG_GLOBAL: /dev/null
+          GIT_CONFIG_NOSYSTEM: "1"
+        run: swift test --skip AITests --skip 'tellsMusicFromSpeech|tellsVowelsApart|vocalFocusThenLipSync'
+
+      # カタログに入っていない文字列（書き出しでカタログが変わる）と、ja の訳がない文字列で止める
+      - name: Localizations
+        env:
+          GIT_CONFIG_GLOBAL: /dev/null
+          GIT_CONFIG_NOSYSTEM: "1"
+        run: |
+          swift run --package-path BuildTools -c release xcodegen
+          xcodebuild -exportLocalizations -project RingoMate.xcodeproj -scheme RingoMate -derivedDataPath build \
+            -localizationPath "$RUNNER_TEMP/loc" -exportLanguage ja CODE_SIGN_IDENTITY=- CODE_SIGN_STYLE=Manual DEVELOPMENT_TEAM=
+          test -z "$(git status --porcelain -- '*.xcstrings')" || { git status --porcelain -- '*.xcstrings'; exit 1; }
+          python3 - "$RUNNER_TEMP/loc/ja.xcloc/Localized Contents/ja.xliff" <<'EOF'
+          import sys, xml.etree.ElementTree as ET
+          ns = '{urn:oasis:names:tc:xliff:document:1.2}'
+          bad = [f"{f.get('original')}: {u.get('id')}" for f in ET.parse(sys.argv[1]).getroot().iter(ns + 'file')
+                 for u in f.iter(ns + 'trans-unit')
+                 if u.find(ns + 'target') is None or u.find(ns + 'target').get('state') not in ('translated', 'final')]
+          print('\n'.join(bad))
+          sys.exit(1 if bad else 0)
+          EOF

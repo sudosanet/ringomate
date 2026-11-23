@@ -1,0 +1,10 @@
+# itch.io は手作業のダウンロードなので直接入れる
+name = "Universal Animation Library (Standard)"
+source = "https://quaternius.itch.io/universal-animation-library"
+author = "Quaternius"
+spdx = "CC0-1.0"
+credit = "Universal Animation Library by Quaternius (CC0)"
+# 配布 ZIP「Universal Animation Library[Standard].zip」内の Unreal-Godot/UAL1_Standard.glb（ルートモーションなし）
+sha256 = "69591853d817488edaa8fd9bf8fc1d821eaeaf789f8627b3cd23b41c4ed67997"
+committed = ["UAL1_Standard.glb"]
+files = []

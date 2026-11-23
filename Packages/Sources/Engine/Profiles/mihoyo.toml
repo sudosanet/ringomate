@@ -1,0 +1,18 @@
+name = "mihoyo"
+match_comment = ["miHoYo", "米哈游", "原神"]
+match_text = ["miHoYo", "米哈游", "原神", "Genshin"]
+face_materials = ["颜", "顔", "脸", "face"]
+# 「体」は服のテクスチャ名（体.png など）にも当たるので入れない。
+hidden_removal = ["肌", "皮肤", "skin", "Skin", "素体"]
+
+[ramp]
+day = [0.88, 0.78, 0.80]
+night = [0.72, 0.74, 0.92]
+softness = 0.04
+replaces_toon = true
+
+
+[see_through]
+bangs = ["前髪", "前发", "刘海"]
+materials = ["眉", "睫", "目", "瞳", "目光", "白目"]
+alpha = 0.6

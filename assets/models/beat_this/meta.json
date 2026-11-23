@@ -1,0 +1,12 @@
+{
+ "frames": 750,
+ "sampleRate": 22050,
+ "nFFT": 1024,
+ "hop": 441,
+ "mels": 128,
+ "logMultiplier": 1000,
+ "normalized": "frame_length",
+ "power": 1,
+ "model": "small0",
+ "license": "MIT (CPJKU/beat_this, Institute of Computational Perception, JKU Linz)"
+}

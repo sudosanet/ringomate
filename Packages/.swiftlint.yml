@@ -1,0 +1,17 @@
+# モジュールの import のルールとファイルの長さだけを見る（モジュールどうしの向きは Package.swift の依存で止まる）
+only_rules: [custom_rules, file_length]
+file_length:
+  warning: 400
+  ignore_comment_only_lines: true
+included: [Sources]
+custom_rules:
+  appkit_only_in_ui:
+    regex: '^\s*(@\w+\s+)*import\s+(\w+\s+)?(AppKit|SwiftUI|Cocoa)\b'
+    excluded: 'Sources/(Overlay|Settings)/'
+    message: "AppKit・SwiftUI は Overlay・Settings だけ"
+    severity: error
+  metal_only_in_render:
+    regex: '^\s*(@\w+\s+)*import\s+(\w+\s+)?(Metal|MetalKit|MetalFX)\b'
+    excluded: 'Sources/Render/'
+    message: "Metal は Render だけ"
+    severity: error

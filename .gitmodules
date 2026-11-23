@@ -1,0 +1,24 @@
+[submodule "Packages/Vendor/Jolt/JoltPhysics"]
+	path = Packages/Vendor/Jolt/JoltPhysics
+	url = https://github.com/jrouwe/JoltPhysics.git
+	shallow = true
+[submodule "Packages/Vendor/Ufbx/ufbx"]
+	path = Packages/Vendor/Ufbx/ufbx
+	url = https://github.com/ufbx/ufbx.git
+	shallow = true
+[submodule "Packages/Vendor/Meshopt/meshoptimizer"]
+	path = Packages/Vendor/Meshopt/meshoptimizer
+	url = https://github.com/zeux/meshoptimizer.git
+	shallow = true
+[submodule "assets/kaykit"]
+	path = assets/kaykit
+	url = https://github.com/KayKit-Game-Assets/KayKit-Furniture-Bits-1.0.git
+	shallow = true
+[submodule "assets/bandai"]
+	path = assets/bandai
+	url = https://github.com/BandaiNamcoResearchInc/Bandai-Namco-Research-Motiondataset.git
+	shallow = true
+[submodule "assets/cmu"]
+	path = assets/cmu
+	url = https://github.com/una-dinosauria/cmu-mocap.git
+	shallow = true

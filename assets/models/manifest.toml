@@ -1,0 +1,7 @@
+# 変換したモデル（配布元にない形なので直接入れる）
+name = "Beat This!（small0）・LAION-CLAP（音楽版の音の側）"
+source = "https://github.com/CPJKU/beat_this ・ https://github.com/LAION-AI/CLAP"
+author = "Institute of Computational Perception, JKU Linz（Beat This!）・LAION（CLAP）"
+spdx = "MIT AND Apache-2.0"
+credit = "Beat This! (c) Foscarin, Schlüter, Widmer, JKU Linz, MIT License. LAION-CLAP weights music_audioset_epoch_15_esc_90.14.pt (c) LAION, Apache License 2.0."
+note = "拍・1 拍目・拍子（Beat This!、MIT）と曲の雰囲気（CLAP、重み Apache-2.0、コード CC0）。どちらも端末の中だけで回す。"

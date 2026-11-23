@@ -1,0 +1,11 @@
+{
+  "name": "ringomate",
+  "owner": { "name": "sudosanet" },
+  "plugins": [
+    {
+      "name": "ringomate",
+      "source": "./plugins/ringomate",
+      "description": "The RingoMate desktop mascot reacts to what Claude Code is doing"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+ "sampleRate": 48000,
+ "samples": 480000,
+ "nFFT": 1024,
+ "hop": 480,
+ "window": "hann (periodic)",
+ "center": "reflect",
+ "power": 2,
+ "mels": 64,
+ "fMin": 50,
+ "fMax": 14000,
+ "melScale": "slaney (norm slaney)",
+ "log": "10 * log10(max(mel, 1e-10))",
+ "frames": 1001,
+ "chunks": [
+  {
+   "file": "Audio0.aimodel",
+   "input": "mel",
+   "output": "y",
+   "inputShape": [
+    1,
+    1001,
+    64
+   ],
+   "outputShape": [
+    1,
+    256,
+    512
+   ]
+  },
+  {
+   "file": "Audio1.aimodel",
+   "input": "x",
+   "output": "y",
+   "inputShape": [
+    1,
+    256,
+    512
+   ],
+   "outputShape": [
+    1,
+    256,
+    512
+   ]
+  },
+  {
+   "file": "Audio2.aimodel",
+   "input": "x",
+   "output": "y",
+   "inputShape": [
+    1,
+    256,
+    512
+   ],
+   "outputShape": [
+    1,
+    256,
+    512
+   ]
+  },
+  {
+   "file": "Audio3.aimodel",
+   "input": "x",
+   "output": "y",
+   "inputShape": [
+    1,
+    256,
+    512
+   ],
+   "outputShape": [
+    1,
+    256,
+    512
+   ]
+  },
+  {
+   "file": "Audio4.aimodel",
+   "input": "x",
+   "output": "y",
+   "inputShape": [
+    1,
+    256,
+    512
+   ],
+   "outputShape": [
+    1,
+    256,
+    512
+   ]
+  },
+  {
+   "file": "Audio5.aimodel",
+   "input": "x",
+   "output": "y",
+   "inputShape": [
+    1,
+    256,
+    512
+   ],
+   "outputShape": [
+    1,
+    64,
+    1024
+   ]
+  },
+  {
+   "file": "Audio6.aimodel",
+   "input": "x",
+   "output": "embedding",
+   "inputShape": [
+    1,
+    64,
+    1024
+   ],
+   "outputShape": [
+    1,
+    512
+   ]
+  }
+ ],
+ "model": "music_audioset_epoch_15_esc_90.14.pt (LAION-AI/CLAP, HTSAT-base; config from laion/larger_clap_music)",
+ "license": "CC0-1.0 (LAION-AI/CLAP code), Apache-2.0 (weights)"
+}

@@ -1,0 +1,9 @@
+# 原神 少女（Columbina）: 揺れるスカートに付く完全固定のリボン（右qd・左qd、質量 0.44〜0.01 の 16 個）が震える。
+name = "columbina"
+match_name = ["Columbina"]
+
+[physics]
+attach = ["右qd", "左qd", "右qf", "左qf", "右ts", "左ts"]
+# マントの裾の 2 列（pf_10・pf_11）は大きく軽い箱で、5〜15° の狭い範囲の端で跳ね返る。
+widen = ["pf_10", "pf_11"]
+widen_factor = 1.5

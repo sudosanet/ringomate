@@ -1,0 +1,15 @@
+.DS_Store
+/Packages/.build/
+/RingoMate.xcodeproj/
+/App/Info.plist
+/build/
+xcuserdata/
+.swiftpm/
+# 配布元から各自で取る素材（README）
+/assets/tsukuyomi/*
+!/assets/tsukuyomi/manifest.toml
+/assets/songs/
+/claude-plugin/plugins/ringomate/bin/
+/Config/Local.xcconfig
+/BuildTools/.build/
+/.claude/

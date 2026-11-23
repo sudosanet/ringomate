@@ -1,0 +1,109 @@
+name: RingoMate
+options:
+  bundleIdPrefix: app.ringomate
+  deploymentTarget:
+    macOS: "27.0"
+settings:
+  base:
+    SWIFT_VERSION: "6"
+    MACOSX_DEPLOYMENT_TARGET: "27.0"
+    ARCHS: arm64
+    SWIFT_EMIT_LOC_STRINGS: YES
+    LOCALIZATION_PREFERS_STRING_CATALOGS: YES
+packages:
+  MascotPackages:
+    path: Packages
+targets:
+  RingoMate:
+    type: application
+    configFiles:
+      Debug: Config/Signing.xcconfig
+    platform: macOS
+    sources:
+      - App
+      - path: PRIVACY.md
+        buildPhase: resources
+      - path: assets/tsukuyomi
+        type: folder
+        buildPhase: resources
+      - path: assets/ual
+        type: folder
+        buildPhase: resources
+      - path: assets/ual2
+        type: folder
+        buildPhase: resources
+      - path: assets/models
+        type: folder
+        buildPhase: resources
+    postCompileScripts:
+      # サブモジュールの素材は manifest の files だけを入れる（フォルダごと入れない）
+      - name: Copy listed assets
+        basedOnDependencyAnalysis: false
+        script: |
+          set -euo pipefail
+          dest="${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
+          for name in bandai cmu kaykit; do
+            m="${SRCROOT}/assets/${name}.toml"
+            rm -rf "${dest}/${name}" && cp "${m}" "${dest}/${name}.toml"
+            sed -n '/^files = \[/,/^\]/p' "${m}" | grep -o '"[^"]*"' | tr -d '"' | while read -r f; do
+              mkdir -p "${dest}/${name}/$(dirname "${f}")"
+              cp "${SRCROOT}/assets/${name}/${f}" "${dest}/${name}/${f}"
+            done
+          done
+          # アセットデータはアプリに入れない（起動してから R2 から取る。Listen の SongSync）
+          rm -rf "${dest}/songs"
+    dependencies:
+      - package: MascotPackages
+        product: Overlay
+      - package: MascotPackages
+        product: Settings
+      - package: MascotPackages
+        product: AI
+      - package: MascotPackages
+        product: Voice
+      - package: MascotPackages
+        product: Behavior
+      - package: MascotPackages
+        product: Agent
+      - package: MascotPackages
+        product: Render
+      - package: MascotPackages
+        product: CoreBridge
+      - package: MascotPackages
+        product: Engine
+      - package: MascotPackages
+        product: MascotCore
+      - package: MascotPackages
+        product: Listen
+      - package: MascotPackages
+        product: Senses
+      - package: MascotPackages
+        product: Update
+    info:
+      path: App/Info.plist
+      properties:
+        LSUIElement: true
+        NSAppleEventsUsageDescription: RingoMate uses this to find the Ghostty or iTerm2 window running Claude Code so it can sit on top of it, and to mention the song playing in Music or Spotify. Nothing leaves your Mac.
+        CFBundleDisplayName: RingoMate
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: app.ringomate
+        MARKETING_VERSION: "0.0.0"
+        CURRENT_PROJECT_VERSION: "1"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ENABLE_HARDENED_RUNTIME: YES
+        ENABLE_USER_SCRIPT_SANDBOXING: NO
+      configs:
+        Debug:
+          # Apple Development。Local.xcconfig のチームで、手元の再ビルドでも許可が残る
+          CODE_SIGN_STYLE: Automatic
+          CODE_SIGN_IDENTITY: Apple Development
+        Release:
+          # Developer ID。公証して配る
+          CODE_SIGN_STYLE: Manual
+          CODE_SIGN_IDENTITY: Developer ID Application
+          DEVELOPMENT_TEAM: 4RU8L6U52Z
+          # 開発用の get-task-allow を足さない（公証で弾かれる）
+          CODE_SIGN_INJECT_BASE_ENTITLEMENTS: NO

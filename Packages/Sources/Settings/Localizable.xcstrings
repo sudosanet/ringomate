@@ -1,0 +1,3416 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%@ (applies after reloading)" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@（読み込み直しで当たる）"
+          }
+        }
+      }
+    },
+    "%@ · Built-in" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@・組み込み"
+          }
+        }
+      }
+    },
+    "%@ · Bundled" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@・同梱"
+          }
+        }
+      }
+    },
+    "%@ · User" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@・ユーザー"
+          }
+        }
+      }
+    },
+    "%lld / %lld characters. Rules against reading out personal info and length limits are added separately" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld / %2$lld characters. Rules against reading out personal info and length limits are added separately"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld / %2$lld 文字。個人の情報を読み上げない・文字数の決まりは別に足す"
+          }
+        }
+      }
+    },
+    "%lld items" : {
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld item"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld items"
+                }
+              }
+            }
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld 件"
+          }
+        }
+      }
+    },
+    "%lld turns" : {
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld turn"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld turns"
+                }
+              }
+            }
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld 回"
+          }
+        }
+      }
+    },
+    "120 fps only while moving; idle is capped at 60" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "120 は動いているときだけで、待機は 60 まで"
+          }
+        }
+      }
+    },
+    "60 Hz by default. 120 and 240 are finer" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "既定は 60Hz。120 と 240 は細かい"
+          }
+        }
+      }
+    },
+    "A Claude Code task ran over 5 minutes" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Claude Code の作業が 5 分を超えた"
+          }
+        }
+      }
+    },
+    "A small character who lives on the computer desktop. Always full of energy and curiosity, and talks in a bouncy, casual way." : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パソコンのデスクトップに住んでいる小さなキャラクター。いつも元気いっぱいで好奇心が強く、弾むようなくだけた話し言葉で話す。"
+          }
+        }
+      }
+    },
+    "A small character who lives on the computer desktop. Calm and quiet. Seems curt but truly cares about its owner, and speaks briefly and flatly." : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パソコンのデスクトップに住んでいる小さなキャラクター。落ち着いていて口数は少なめ。そっけないけれど本当は持ち主を気にかけていて、短く淡々と話す。"
+          }
+        }
+      }
+    },
+    "A small character who lives on the computer desktop. Courteous, speaks in polite language, and quietly looks out for its owner." : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パソコンのデスクトップに住んでいる小さなキャラクター。礼儀正しく、です・ます調のていねいな言葉で、持ち主をそっと気づかって話す。"
+          }
+        }
+      }
+    },
+    "A small character who lives on the computer desktop. Spends its days near its owner and talks in a bright, gentle, casual way." : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パソコンのデスクトップに住んでいる小さなキャラクター。持ち主のそばで過ごしていて、明るくやさしい話し言葉で話す。"
+          }
+        }
+      }
+    },
+    "AI models" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AI モデル"
+          }
+        }
+      }
+    },
+    "About" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "情報"
+          }
+        }
+      }
+    },
+    "Accessibility isn't allowed, so notification banners can't be read" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アクセシビリティが許可されていないので、通知のバナーを読めない"
+          }
+        }
+      }
+    },
+    "Assets and libraries" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使っている素材・ライブラリ"
+          }
+        }
+      }
+    },
+    "Activity" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "行動の頻度"
+          }
+        }
+      }
+    },
+    "Add Folder…" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "フォルダを追加…"
+          }
+        }
+      }
+    },
+    "Add a motion after replying" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "返事のあとに動きを付ける"
+          }
+        }
+      }
+    },
+    "Added %lld models to the list" : {
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Added %lld model to the list"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Added %lld models to the list"
+                }
+              }
+            }
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld 個のモデルを一覧に足したよ"
+          }
+        }
+      }
+    },
+    "Adds all models in the folder (ZIP, PMX, PMD, VRM, GLB, glTF, FBX) to the list" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "フォルダの中のモデル（ZIP・PMX・PMD・VRM・GLB・glTF・FBX）をまとめて一覧に足します"
+          }
+        }
+      }
+    },
+    "Adds it to the scene for lines" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一言の場面に入れる"
+          }
+        }
+      }
+    },
+    "Advanced" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "詳細"
+          }
+        }
+      }
+    },
+    "Also collides hair with swaying rigid bodies like jacket hems and cloth meshes like hoods and sleeves (experimental)" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ジャケットの裾など揺れる剛体と、フード・袖など服のメッシュの表面にも髪を当てる（試験中）"
+          }
+        }
+      }
+    },
+    "Analysis thresholds" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "解析の閾値"
+          }
+        }
+      }
+    },
+    "Announce app notifications" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アプリの通知を知らせる"
+          }
+        }
+      }
+    },
+    "Announce pending approvals" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "承認待ちを一言で知らせる"
+          }
+        }
+      }
+    },
+    "Announces even when lines are off, but not during quiet hours" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一言がオフでも知らせる。黙る時間は知らせない"
+          }
+        }
+      }
+    },
+    "Another" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "もう一度"
+          }
+        }
+      }
+    },
+    "Answer approvals in the speech bubble" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "承認に吹き出しで答える"
+          }
+        }
+      }
+    },
+    "Appearance" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "見た目"
+          }
+        }
+      }
+    },
+    "Applies after restarting RingoMate. The character speaks in this language too" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RingoMate を再起動すると反映される。キャラクターもこの言語で話す"
+          }
+        }
+      }
+    },
+    "Applies when the model is reloaded" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "モデルを読み込み直したときに当たる"
+          }
+        }
+      }
+    },
+    "Apps to never look at" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "見ないアプリ"
+          }
+        }
+      }
+    },
+    "Ask the AI for missing bone candidates" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "足りないボーンの候補を AI に出させる"
+          }
+        }
+      }
+    },
+    "Attach fixed chains to swaying parts" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "固定の鎖を揺れものに乗せる"
+          }
+        }
+      }
+    },
+    "Attach fixed swaying parts to bones" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "固定の揺れものを骨に付ける"
+          }
+        }
+      }
+    },
+    "Auto" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自動"
+          }
+        }
+      }
+    },
+    "Auto (now: %@)" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自動（今: %@）"
+          }
+        }
+      }
+    },
+    "Average normals at seams" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "継ぎ目の法線の平均"
+          }
+        }
+      }
+    },
+    "Bloom" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bloom"
+          }
+        }
+      }
+    },
+    "Bright" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "明るい"
+          }
+        }
+      }
+    },
+    "Bust physics" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "胸の揺れ"
+          }
+        }
+      }
+    },
+    "Bust physics strength" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "胸の揺れの強さ"
+          }
+        }
+      }
+    },
+    "Calls gesture, prop, and expression tools while talking" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "しゃべるときに仕草・小物・表情の道具を呼ぶ"
+          }
+        }
+      }
+    },
+    "Calm" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "落ち着き"
+          }
+        }
+      }
+    },
+    "Changes apply immediately. Auto ramp switches to night from 8 PM to 6 AM and in Dark Mode. Wallpaper adjustment needs screen recording permission" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "その場で変わる。Ramp の自動は 20〜6 時とダークモードで夜。壁紙の補正は画面収録の許可があるときだけ"
+          }
+        }
+      }
+    },
+    "Character" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "キャラクター"
+          }
+        }
+      }
+    },
+    "Character size, movement, and how it appears on screen" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "キャラクターの大きさ・動き方・画面の出方"
+          }
+        }
+      }
+    },
+    "Characters" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "キャラクター"
+          }
+        }
+      }
+    },
+    "Characters, motions, models, and code by other authors included in the app" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アプリに入っている、ほかの作者のキャラクター・モーション・モデル・コード"
+          }
+        }
+      }
+    },
+    "Cheerful" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "元気"
+          }
+        }
+      }
+    },
+    "Choose Custom to edit starting from this text" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "カスタムを選ぶと、この文から書き換えられる"
+          }
+        }
+      }
+    },
+    "Choose the character model. See its name, terms, and details" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "キャラクターのモデルを選ぶ。名前・規約・情報も見られる"
+          }
+        }
+      }
+    },
+    "Choose…" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "選ぶ…"
+          }
+        }
+      }
+    },
+    "Claude Code finished or failed a task" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Claude Code の作業が終わった・失敗した"
+          }
+        }
+      }
+    },
+    "Clear List (Keeps Bundled Models)" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一覧を空にする（同梱のモデルは残る）"
+          }
+        }
+      }
+    },
+    "Close" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "閉じる"
+          }
+        }
+      }
+    },
+    "Collects from the next model load. It slows things down, so use it only when troubleshooting" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "次にモデルを読み込んだときから集める。重くなるので、不具合を調べるときだけ"
+          }
+        }
+      }
+    },
+    "Commands (Bash)" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "コマンド（Bash）"
+          }
+        }
+      }
+    },
+    "Comment" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "コメント"
+          }
+        }
+      }
+    },
+    "Conversation" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "会話"
+          }
+        }
+      }
+    },
+    "Conversation summary so far" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "これまでの会話のまとめ"
+          }
+        }
+      }
+    },
+    "Cool" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "クール"
+          }
+        }
+      }
+    },
+    "Copied" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "コピーしました"
+          }
+        }
+      }
+    },
+    "Copies the author's stiffness and drag (experimental; less sway and more hair clipping)" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "作者の硬さ・抵抗を写す（試験中。揺れが減り、髪のめり込みが増えた）"
+          }
+        }
+      }
+    },
+    "Copy" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "コピー"
+          }
+        }
+      }
+    },
+    "Copy version, macOS, and chip" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "バージョン・macOS・チップをコピー"
+          }
+        }
+      }
+    },
+    "Credit" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "クレジット"
+          }
+        }
+      }
+    },
+    "Custom" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "カスタム"
+          }
+        }
+      }
+    },
+    "Damping 0.18" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "減衰比 0.18"
+          }
+        }
+      }
+    },
+    "Day (warm)" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "昼（暖色）"
+          }
+        }
+      }
+    },
+    "Default (Application Support/ringomate/profiles)" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "既定（Application Support/ringomate/profiles）"
+          }
+        }
+      }
+    },
+    "Delete" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "消す"
+          }
+        }
+      }
+    },
+    "Deletes, pushes, sudo, and similar commands are always confirmed in the terminal" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "削除・push・sudo などはいつもターミナルで確認する"
+          }
+        }
+      }
+    },
+    "Describe it in Japanese, then press Make to create the voice." : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "日本語で書いて「作る」を押すと、その声を作ります。"
+          }
+        }
+      }
+    },
+    "Describe it yourself" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "言葉で作る"
+          }
+        }
+      }
+    },
+    "Describe the voice" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "声の説明"
+          }
+        }
+      }
+    },
+    "Detect from shape" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "形からの判定"
+          }
+        }
+      }
+    },
+    "Diagnostics" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "診断"
+          }
+        }
+      }
+    },
+    "Disabled" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "無効"
+          }
+        }
+      }
+    },
+    "Display" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "表示"
+          }
+        }
+      }
+    },
+    "Download" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ダウンロード"
+          }
+        }
+      }
+    },
+    "Download the Japanese voice (about 1 GB)" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "日本語の声をダウンロード（約 1GB）"
+          }
+        }
+      }
+    },
+    "Downloading… %lld%%" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ダウンロード中… %lld%%"
+          }
+        }
+      }
+    },
+    "Each voice is made once and then reused, so it sounds the same every time. Press ↻ for a different take; the current voice stays until you choose the new one." : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "声は 1 度だけ作って使い回すので、いつも同じ声で喋ります。↻ で別の声を作れます。新しい声に決めるまでは、今の声のままです。"
+          }
+        }
+      }
+    },
+    "Edit face normals" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "顔の法線の編集"
+          }
+        }
+      }
+    },
+    "Empty fields use defaults. Strength is Bust physics strength in Appearance" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "空の欄は既定。強さは「見た目」の胸の揺れの強さ"
+          }
+        }
+      }
+    },
+    "Enable diagnostics" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "診断を有効にする"
+          }
+        }
+      }
+    },
+    "Energetic" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "元気"
+          }
+        }
+      }
+    },
+    "Environment variables set at launch (such as MASCOT_DISABLE) take priority" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "起動時に付けた環境変数（MASCOT_DISABLE など）があれば、そちらが優先"
+          }
+        }
+      }
+    },
+    "Evaluate and simulate one frame ahead in the background" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "評価と物理を裏で 1 フレーム先に"
+          }
+        }
+      }
+    },
+    "Example lines are copied as they are, even where they don't fit. Use only short lines that work in any situation, and don't write words you don't want said" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "セリフの例は、場面に合わなくてもそのまま使われます。どの場面でも言える短いセリフだけにして、言ってほしくない言葉は書かないでください"
+          }
+        }
+      }
+    },
+    "Expression strength" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "表情の強さ"
+          }
+        }
+      }
+    },
+    "Extends chains named per model (physics.attach) from their parent rigid body" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "モデルごとの指定（physics.attach）の鎖を親の剛体の延長にする"
+          }
+        }
+      }
+    },
+    "Eyes and brows through bangs" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "前髪越しの目・眉"
+          }
+        }
+      }
+    },
+    "Family" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "系統"
+          }
+        }
+      }
+    },
+    "Fewer" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "少なめ"
+          }
+        }
+      }
+    },
+    "File edits (Edit, Write)" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ファイルの編集（Edit・Write）"
+          }
+        }
+      }
+    },
+    "File not found" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ファイルが見つからない"
+          }
+        }
+      }
+    },
+    "File size" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ファイルの大きさ"
+          }
+        }
+      }
+    },
+    "Find chest bones from shape" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "胸の骨を形から探す"
+          }
+        }
+      }
+    },
+    "Find face materials from shape" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "顔の材質を形から探す"
+          }
+        }
+      }
+    },
+    "Find skin under clothes" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "服の下の肌を見つける"
+          }
+        }
+      }
+    },
+    "Find things in the wallpaper" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "壁紙の物を見つける"
+          }
+        }
+      }
+    },
+    "Finds the face from forward-facing materials on the head when names don't match" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "名前で見つからない顔を、頭に付く前向きの材質から探す"
+          }
+        }
+      }
+    },
+    "Finds the face, eyes, bangs, and chest from shape when names don't match (the 5 below together)" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "名前で見つからない顔・目・前髪・胸を形から探す（下の 5 つをまとめて）"
+          }
+        }
+      }
+    },
+    "Fix flipped legs in song dances" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "曲の踊りの脚の裏返りを直す"
+          }
+        }
+      }
+    },
+    "Fixes broken joints, initial overlaps, and fixed skirts" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "壊れた関節・初期の重なり・固定のスカートを直す"
+          }
+        }
+      }
+    },
+    "Follow System" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "システムに従う"
+          }
+        }
+      }
+    },
+    "For calls. Some apps keep the microphone open even outside a call." : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通話のため。通話していなくてもマイクを開いたままのアプリもあります。"
+          }
+        }
+      }
+    },
+    "For models with unclear names, skips hidden materials close to the face color (experimental)" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "名前で分からないモデルで、顔の色に近い材質の見えない部分を描かない（試験中）"
+          }
+        }
+      }
+    },
+    "Format" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "形式"
+          }
+        }
+      }
+    },
+    "Frame rate and lip sync" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "フレームとリップシンク"
+          }
+        }
+      }
+    },
+    "Frame rate limit" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "フレームレートの上限"
+          }
+        }
+      }
+    },
+    "Frame rate while standing still" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "静止中のフレームレート"
+          }
+        }
+      }
+    },
+    "Frequency" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "頻度"
+          }
+        }
+      }
+    },
+    "Frequency 2.2" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "周波数 2.2"
+          }
+        }
+      }
+    },
+    "From" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "開始"
+          }
+        }
+      }
+    },
+    "From a recording" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "録音から"
+          }
+        }
+      }
+    },
+    "General" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一般"
+          }
+        }
+      }
+    },
+    "Gentle" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "やさしい"
+          }
+        }
+      }
+    },
+    "Gives face shadows an anime look" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "顔の影をアニメ調にする"
+          }
+        }
+      }
+    },
+    "Gravity 0.5" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重力 0.5"
+          }
+        }
+      }
+    },
+    "Ground shadow opacity" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "接地影の不透明度"
+          }
+        }
+      }
+    },
+    "Hair chain softness" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "髪の鎖の柔らかさ"
+          }
+        }
+      }
+    },
+    "Hide" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "隠れる"
+          }
+        }
+      }
+    },
+    "Hides step-to-step jitter (swaying parts lag one frame)" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "刻みごとの行き来を見せない（揺れものが 1 フレーム遅れる）"
+          }
+        }
+      }
+    },
+    "Imitate an audio file of about 10 seconds" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10 秒くらいの音声ファイルの声をまねる"
+          }
+        }
+      }
+    },
+    "Information for troubleshooting" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "不具合を調べるときの情報"
+          }
+        }
+      }
+    },
+    "Installing…" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "展開中…"
+          }
+        }
+      }
+    },
+    "It continues in the background, even with this window closed." : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "このウインドウを閉じても、裏で続きます。"
+          }
+        }
+      }
+    },
+    "Japanese is spoken with Irodori-TTS on this Mac (Neural Engine). Other languages use the macOS voice." : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "日本語はこの Mac の Irodori-TTS（ニューラルエンジン）で喋ります。ほかの言語は macOS の声を使います。"
+          }
+        }
+      }
+    },
+    "Japanese voice model" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "日本語の声のモデル"
+          }
+        }
+      }
+    },
+    "Keep dancing hands outside the body" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "踊りの手を体の外へ"
+          }
+        }
+      }
+    },
+    "Keep hair steady when frame timing varies" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "画面の間隔の揺れで髪を震えさせない"
+          }
+        }
+      }
+    },
+    "Keep the old one" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "前のままにする"
+          }
+        }
+      }
+    },
+    "Keeps both feet from staying in the air after gestures" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "仕草で両足が浮いたままにしない"
+          }
+        }
+      }
+    },
+    "Keeps hair speed constant when frame intervals change" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "フレームの間隔が変わっても髪の速さを保つ"
+          }
+        }
+      }
+    },
+    "Keeps hands from sinking into the chest or face in song dances" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "曲の踊りで手が胸や顔にめり込まない"
+          }
+        }
+      }
+    },
+    "Keeps outlines from breaking at corners" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "輪郭線が角で切れない"
+          }
+        }
+      }
+    },
+    "Keeps skin under clothes from showing through" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "服の下の肌が透けて出るのを防ぐ"
+          }
+        }
+      }
+    },
+    "Keeps the whites of the eyes from darkening when turned sideways" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "横を向いても白目が暗く沈まない"
+          }
+        }
+      }
+    },
+    "Lambert ratio on face" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "顔の Lambert の割合"
+          }
+        }
+      }
+    },
+    "Language" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "言語"
+          }
+        }
+      }
+    },
+    "Let hair hit swaying clothes" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "髪を揺れる服にも当てる"
+          }
+        }
+      }
+    },
+    "Let the AI move the body" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AI に体を動かさせる"
+          }
+        }
+      }
+    },
+    "Libraries" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ライブラリ"
+          }
+        }
+      }
+    },
+    "License" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ライセンス"
+          }
+        }
+      }
+    },
+    "Licenses" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ライセンス"
+          }
+        }
+      }
+    },
+    "Lift overly dark VRM shadows" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VRM の暗すぎる影を持ち上げる"
+          }
+        }
+      }
+    },
+    "Lifts MToon shade colors darker than 55% of the base color (experimental)" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MToon の影色が地の色の 55% より暗いときに持ち上げる（試験中）"
+          }
+        }
+      }
+    },
+    "Limit 0.6" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "上限 0.6"
+          }
+        }
+      }
+    },
+    "Line length" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一言の長さ"
+          }
+        }
+      }
+    },
+    "Lines" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一言"
+          }
+        }
+      }
+    },
+    "Lip sync while dancing" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "踊るときのリップシンク"
+          }
+        }
+      }
+    },
+    "Listen" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "聞く"
+          }
+        }
+      }
+    },
+    "Listen to your Mac's audio and groove to music" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mac の音を聞いて曲に乗る"
+          }
+        }
+      }
+    },
+    "Listens only to the app playing the song. Nothing leaves your Mac" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "曲を鳴らしているアプリの音だけを聞く。端末の外へは出さない"
+          }
+        }
+      }
+    },
+    "Lively" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "にぎやか"
+          }
+        }
+      }
+    },
+    "Load" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "読み込む"
+          }
+        }
+      }
+    },
+    "Load from File…" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ファイルから読み込む…"
+          }
+        }
+      }
+    },
+    "Loading" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "読み込み中"
+          }
+        }
+      }
+    },
+    "Loading: %@" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "読み込み中: %@"
+          }
+        }
+      }
+    },
+    "Loading…" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "読み込み中…"
+          }
+        }
+      }
+    },
+    "Long" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "長め"
+          }
+        }
+      }
+    },
+    "Look at the front window" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "前面のウィンドウを見る"
+          }
+        }
+      }
+    },
+    "Look interval" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "見る間隔"
+          }
+        }
+      }
+    },
+    "Lower floating feet with gravity" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "浮いた足を重力で下ろす"
+          }
+        }
+      }
+    },
+    "MSAA" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MSAA"
+          }
+        }
+      }
+    },
+    "Make" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "作る"
+          }
+        }
+      }
+    },
+    "Make a new take of this voice" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "この声を作り直す"
+          }
+        }
+      }
+    },
+    "Making thumbnails and details (%lld left)" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "サムネイルと情報を作っています（あと %lld 個）"
+          }
+        }
+      }
+    },
+    "Making…" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "作っています…"
+          }
+        }
+      }
+    },
+    "Match the expression to the reply" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "返事に合わせて表情を変える"
+          }
+        }
+      }
+    },
+    "Matches the GPU vertex cache" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GPU の頂点のキャッシュに合わせる"
+          }
+        }
+      }
+    },
+    "Messages from Claude Code" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Claude Code からのひとこと"
+          }
+        }
+      }
+    },
+    "Mix in 60% material color" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "材質色を 60% 混ぜる"
+          }
+        }
+      }
+    },
+    "Model" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "モデル"
+          }
+        }
+      }
+    },
+    "Model-specific rules (match_name) > analysis > family rules. Turning off applies after reloading" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "名指しの規則（match_name）＞ 解析 ＞ 系統の規則。切ると読み込み直しで当たる"
+          }
+        }
+      }
+    },
+    "Models" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "モデル"
+          }
+        }
+      }
+    },
+    "More" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "多め"
+          }
+        }
+      }
+    },
+    "Motion and expressions" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "動きと表情"
+          }
+        }
+      }
+    },
+    "Motions" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "モーション"
+          }
+        }
+      }
+    },
+    "Move to corner" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "隅に寄る"
+          }
+        }
+      }
+    },
+    "Name" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "名前"
+          }
+        }
+      }
+    },
+    "Needs screen recording permission" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "画面収録の許可が要る"
+          }
+        }
+      }
+    },
+    "New take of “%@”" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "「%@」の新しい声"
+          }
+        }
+      }
+    },
+    "Night (cool)" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "夜（寒色）"
+          }
+        }
+      }
+    },
+    "No edge light inside the face or on the eyes (experimental)" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "顔の内側と目に縁の光を出さない（試験中）"
+          }
+        }
+      }
+    },
+    "No model loaded yet" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "まだモデルを読み込んでいない"
+          }
+        }
+      }
+    },
+    "No models found" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "モデルが見つからなかった"
+          }
+        }
+      }
+    },
+    "No terms file found (check the comment and the distribution page too)" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "規約のファイルは見つからなかった（コメントや配布元のページも確かめてね）"
+          }
+        }
+      }
+    },
+    "None" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "なし"
+          }
+        }
+      }
+    },
+    "Normal" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ふつう"
+          }
+        }
+      }
+    },
+    "Not found" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "見つからない"
+          }
+        }
+      }
+    },
+    "Not set" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "決めない"
+          }
+        }
+      }
+    },
+    "Nothing leaves your Mac" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "どれも端末の外には出さない"
+          }
+        }
+      }
+    },
+    "Notifications" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通知"
+          }
+        }
+      }
+    },
+    "Off" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "オフ"
+          }
+        }
+      }
+    },
+    "On-device AI and Claude Code" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "端末の中だけで動く AI と Claude Code"
+          }
+        }
+      }
+    },
+    "One bundle ID prefix per line (e.g. com.tinyspeck.slackmacgap). Password managers, System Settings, and similar apps are never looked at" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "バンドル ID の頭を 1 行に 1 つ（例: com.tinyspeck.slackmacgap）。パスワード管理・システム設定などはいつも見ない"
+          }
+        }
+      }
+    },
+    "Open Folder" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "フォルダを開く"
+          }
+        }
+      }
+    },
+    "Open System Settings" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "システム設定を開く"
+          }
+        }
+      }
+    },
+    "Order-independent transparency (OIT)" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "半透明の重ね合わせ（OIT）"
+          }
+        }
+      }
+    },
+    "Outline color" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "輪郭線の色"
+          }
+        }
+      }
+    },
+    "Outline width" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "輪郭線の太さ"
+          }
+        }
+      }
+    },
+    "Overlays the eyes and brows faintly on top of the bangs" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "前髪の上に目・眉を薄く重ねる"
+          }
+        }
+      }
+    },
+    "PMX edge color" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PMX のエッジ色"
+          }
+        }
+      }
+    },
+    "Pause" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一時停止"
+          }
+        }
+      }
+    },
+    "Personality and tone" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "性格と口調"
+          }
+        }
+      }
+    },
+    "Physics" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "物理"
+          }
+        }
+      }
+    },
+    "Physics fixes" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "物理の補正"
+          }
+        }
+      }
+    },
+    "Physics step" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "物理の刻み"
+          }
+        }
+      }
+    },
+    "Polite" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ていねい"
+          }
+        }
+      }
+    },
+    "Ported code" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "移植したコード"
+          }
+        }
+      }
+    },
+    "Preparing" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "準備しています"
+          }
+        }
+      }
+    },
+    "Present the drawing rect and image together" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "描く矩形と絵を同時に出す"
+          }
+        }
+      }
+    },
+    "Processing" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "処理"
+          }
+        }
+      }
+    },
+    "Privacy Policy" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "プライバシーポリシー"
+          }
+        }
+      }
+    },
+    "Profile" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "プロファイル"
+          }
+        }
+      }
+    },
+    "Props" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "小道具"
+          }
+        }
+      }
+    },
+    "Quiet now: %@ is using the microphone" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今は %@ がマイクを使っているので黙っています"
+          }
+        }
+      }
+    },
+    "RGBA8 for all" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "全部 RGBA8"
+          }
+        }
+      }
+    },
+    "RGBA8 for face and eyes" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "顔・目だけ RGBA8"
+          }
+        }
+      }
+    },
+    "Read notification banners" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通知のバナーを読む"
+          }
+        }
+      }
+    },
+    "Ready" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使えます"
+          }
+        }
+      }
+    },
+    "Recent lines remembered to avoid repeats" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "同じことを言わないよう覚える数"
+          }
+        }
+      }
+    },
+    "Refresh" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更新"
+          }
+        }
+      }
+    },
+    "Relaxed" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "のんびり"
+          }
+        }
+      }
+    },
+    "Reload (Reset)" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "読み込み直す（リセット）"
+          }
+        }
+      }
+    },
+    "Reload and apply" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "読み込み直して当てる"
+          }
+        }
+      }
+    },
+    "Remember conversations" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "会話を覚える"
+          }
+        }
+      }
+    },
+    "Remove from List" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一覧から外す"
+          }
+        }
+      }
+    },
+    "Remove hidden body parts" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "隠れた素体の削除"
+          }
+        }
+      }
+    },
+    "Remove rim light on face and eyes" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "顔・目のリムを消す"
+          }
+        }
+      }
+    },
+    "Removes shadow lines at part seams" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "部品の継ぎ目の影の線を消す"
+          }
+        }
+      }
+    },
+    "Rendering" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "描画"
+          }
+        }
+      }
+    },
+    "Reorder triangles" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "三角形の並べ替え"
+          }
+        }
+      }
+    },
+    "Replies come a little faster when off" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "オフにすると返事が少し早くなる"
+          }
+        }
+      }
+    },
+    "Replies in conversation" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "会話の返事"
+          }
+        }
+      }
+    },
+    "Reply length" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "返事の長さ"
+          }
+        }
+      }
+    },
+    "Reset to Default" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "既定に戻す"
+          }
+        }
+      }
+    },
+    "Restart Now" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今すぐ再起動"
+          }
+        }
+      }
+    },
+    "Restores the knee direction when loading" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "読み込むときにひざの向きを戻す"
+          }
+        }
+      }
+    },
+    "Retry" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "もう一度"
+          }
+        }
+      }
+    },
+    "Returns the model to its initial state when it looks broken" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "表示が崩れたときに、モデルを最初の状態に戻す"
+          }
+        }
+      }
+    },
+    "Rights to loaded models belong to their authors. Use them according to each model's terms." : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "読み込んだモデルの権利は各作者にある。モデルの規約に従って使う。"
+          }
+        }
+      }
+    },
+    "Rim light" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "リムライト"
+          }
+        }
+      }
+    },
+    "Rules (profiles)" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "規則（プロファイル）"
+          }
+        }
+      }
+    },
+    "Rules used where analysis can't decide. Model-specific rules and analysis take priority" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "解析で決まらない所に使う規則。モデルを名指しした規則と解析が優先"
+          }
+        }
+      }
+    },
+    "Save" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保存"
+          }
+        }
+      }
+    },
+    "Saves a summary on this Mac and uses it for later replies" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "まとめを端末内に保存し、次の返事に使う"
+          }
+        }
+      }
+    },
+    "Say a line now and then" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ときどき一言しゃべる"
+          }
+        }
+      }
+    },
+    "Screen recording isn't allowed, so the settings that need it don't work" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "画面収録が許可されていないので、それを使う設定が効かない"
+          }
+        }
+      }
+    },
+    "Search" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "検索"
+          }
+        }
+      }
+    },
+    "Seeing and hearing" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "見る・聞く"
+          }
+        }
+      }
+    },
+    "Select an Item" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "項目を選ぶ"
+          }
+        }
+      }
+    },
+    "Self shadow" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "セルフシャドウ"
+          }
+        }
+      }
+    },
+    "Sets the CAMetalLayer color space to sRGB. When off, colors go to P3 displays unconverted" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CAMetalLayer の colorspace を sRGB にする。オフだと P3 の画面でそのまま出す"
+          }
+        }
+      }
+    },
+    "Shading, post effects, and physics strength. Rendering updates live" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "シェーディング・ポストエフェクト・物理の強さ。描画はその場で変わる"
+          }
+        }
+      }
+    },
+    "Shifts shadows on skin and face without an author toon slightly toward red (experimental)" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "作者の toon がない肌・顔の影を少し赤みに寄せる（試験中）"
+          }
+        }
+      }
+    },
+    "Short" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "短め"
+          }
+        }
+      }
+    },
+    "Show in Finder" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finder で表示"
+          }
+        }
+      }
+    },
+    "Show in screen recordings and sharing" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "画面収録・画面共有に写す"
+          }
+        }
+      }
+    },
+    "Sits on or talks about the things it finds" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "見つけた物に座ったり話したりする"
+          }
+        }
+      }
+    },
+    "Size" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "大きさ"
+          }
+        }
+      }
+    },
+    "Small talk when nothing is happening" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "何もないときの雑談"
+          }
+        }
+      }
+    },
+    "Smooth normals for outlines" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "輪郭線用のなめらかな法線"
+          }
+        }
+      }
+    },
+    "Smooth swaying on 120 Hz displays" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "120Hz の画面で揺れものをならす"
+          }
+        }
+      }
+    },
+    "Source" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "配布元"
+          }
+        }
+      }
+    },
+    "Speak aloud" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "声に出す"
+          }
+        }
+      }
+    },
+    "Speak the speech bubbles aloud and choose the voice" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "吹き出しを声に出し、声を選びます"
+          }
+        }
+      }
+    },
+    "Specular" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "スペキュラ"
+          }
+        }
+      }
+    },
+    "Stable shading for eyes and brows" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "目・眉の安定した陰影"
+          }
+        }
+      }
+    },
+    "Standard (no family)" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "標準（系統なし）"
+          }
+        }
+      }
+    },
+    "Stay" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "そのまま"
+          }
+        }
+      }
+    },
+    "Stay quiet during set hours" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "決まった時間は黙る"
+          }
+        }
+      }
+    },
+    "Stay quiet while an app uses the microphone" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "マイクを使っているアプリがあるときは黙る"
+          }
+        }
+      }
+    },
+    "Strong" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "大きめ"
+          }
+        }
+      }
+    },
+    "Subtle" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "控えめ"
+          }
+        }
+      }
+    },
+    "Sways chest bones that can't be found by name" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "名前で見つからない胸の骨を揺らす"
+          }
+        }
+      }
+    },
+    "Takes a small capture of the strip by its feet when picking where to go, without saving it. Needs screen recording permission" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "行き先を決めるとき、足もとの帯を小さく撮る（保存しない）。画面収録の許可が要る"
+          }
+        }
+      }
+    },
+    "Takes chains that never move (like wings) out of physics" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "動かない鎖（羽など）を物理から外す"
+          }
+        }
+      }
+    },
+    "Takes one capture and shows it to the AI without saving it. Needs screen recording permission" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 枚だけ撮って AI に見せる。保存しない。画面収録の許可が要る"
+          }
+        }
+      }
+    },
+    "Talking to itself" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "独り言"
+          }
+        }
+      }
+    },
+    "Tells you the gist of new banners in a line. Needs Accessibility permission. Banners don't appear during Focus or screen mirroring" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新しいバナーの内容を一言で教えます。アクセシビリティの許可が必要です。集中モードや画面のミラーリング中はバナーが出ません"
+          }
+        }
+      }
+    },
+    "Terms: %@" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "規約: %@"
+          }
+        }
+      }
+    },
+    "Texture" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "テクスチャ"
+          }
+        }
+      }
+    },
+    "This license doesn't require showing the full text. See the source page." : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "全文の表示は必要ないライセンス。配布元のページを参照。"
+          }
+        }
+      }
+    },
+    "Tint shadow and rim from wallpaper" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "壁紙の色で影色・リムを補正"
+          }
+        }
+      }
+    },
+    "Titles need screen recording permission" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "タイトルは画面収録の許可が要る"
+          }
+        }
+      }
+    },
+    "To" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "終了"
+          }
+        }
+      }
+    },
+    "Toon ramp" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "トゥーンの Ramp"
+          }
+        }
+      }
+    },
+    "Try" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "試す"
+          }
+        }
+      }
+    },
+    "Turn features on or off and fine-tune physics (same as the environment variables)" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "処理のオン・オフと物理の細かい調整（環境変数と同じもの）"
+          }
+        }
+      }
+    },
+    "Turn hair into supple chains" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "髪をしなやかな鎖で解く"
+          }
+        }
+      }
+    },
+    "Turn off to compare before and after (all on by default except experimental ones)" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "切ると前後を比べられる（試験中のもの以外はふだんオン）"
+          }
+        }
+      }
+    },
+    "Turns before summarizing" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "まとめるまでのやりとり"
+          }
+        }
+      }
+    },
+    "Until then, Japanese is spoken with the macOS voice." : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "それまでは、日本語も macOS の声で喋ります。"
+          }
+        }
+      }
+    },
+    "Use the author's VRM spring settings" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VRM の揺れを作者の設定どおりに"
+          }
+        }
+      }
+    },
+    "Use the front app's name" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "前面のアプリの名前を使う"
+          }
+        }
+      }
+    },
+    "Use this" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "これにする"
+          }
+        }
+      }
+    },
+    "Use window titles and the playing song" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ウィンドウのタイトル・再生中の曲を使う"
+          }
+        }
+      }
+    },
+    "User rules" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ユーザーの規則"
+          }
+        }
+      }
+    },
+    "Uses on-device AI to add likely standard bone names to the diagnostics" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "端末内の AI で、標準ボーンに当たりそうな名前を診断に足す"
+          }
+        }
+      }
+    },
+    "Uses only on-device Apple Foundation Models" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "端末内の Apple Foundation Models だけを使う"
+          }
+        }
+      }
+    },
+    "Version %@" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "バージョン %@"
+          }
+        }
+      }
+    },
+    "Version and licenses" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "バージョンとライセンス"
+          }
+        }
+      }
+    },
+    "Voice" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "声"
+          }
+        }
+      }
+    },
+    "Volume" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "音量"
+          }
+        }
+      }
+    },
+    "Walk where the screen is empty" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "画面の空いているところを歩く"
+          }
+        }
+      }
+    },
+    "Warm skin shadows" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "肌の影を暖かく"
+          }
+        }
+      }
+    },
+    "Web (WebFetch, WebSearch)" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Web（WebFetch・WebSearch）"
+          }
+        }
+      }
+    },
+    "What to call you" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "持ち主の呼び方"
+          }
+        }
+      }
+    },
+    "When a full-screen app is in front" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "全画面のアプリが前にあるとき"
+          }
+        }
+      }
+    },
+    "When off, blends in PMX order" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "止めると PMX の順に重ねる"
+          }
+        }
+      }
+    },
+    "When off, it won't appear in meeting screen shares. Turn on only when recording a demo" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "オフなら会議の画面共有などに写り込まない。デモを撮るときだけオンに"
+          }
+        }
+      }
+    },
+    "When off, keeps the author's rigid bodies for the chest" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "止めると作者の剛体の胸のまま"
+          }
+        }
+      }
+    },
+    "When off, keeps the author's rigid body chains" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "止めると作者の剛体の鎖のまま"
+          }
+        }
+      }
+    },
+    "When off, may flicker right after sitting and similar moments" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "止めると座った直後などに点滅することがある"
+          }
+        }
+      }
+    },
+    "When off, runs on the main thread" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "止めるとメインスレッドで回す"
+          }
+        }
+      }
+    },
+    "When to speak" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "喋る場面"
+          }
+        }
+      }
+    },
+    "Whimsical" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "気まぐれ"
+          }
+        }
+      }
+    },
+    "Word variety" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "言葉のばらつき"
+          }
+        }
+      }
+    },
+    "Write to File and Open" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ファイルに書いて開く"
+          }
+        }
+      }
+    },
+    "Write your own description" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "声の説明を自分で書く"
+          }
+        }
+      }
+    },
+    "You came back to your desk" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "席に戻ってきた"
+          }
+        }
+      }
+    },
+    "You switched apps" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アプリを切り替えた"
+          }
+        }
+      }
+    },
+    "RingoMate Settings" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RingoMate の設定"
+          }
+        }
+      }
+    },
+    "name=value, comma-separated. Empty uses defaults (applies after reloading)" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "名前=値 をカンマ区切り。空は既定（読み込み直しで当たる）"
+          }
+        }
+      }
+    },
+    "sRGB color management" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "sRGB のカラーマネジメント"
+          }
+        }
+      }
+    },
+    "×1 (MMD)" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "×1（MMD）"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

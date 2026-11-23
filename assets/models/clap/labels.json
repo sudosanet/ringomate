@@ -1,0 +1,43 @@
+{
+ "labels": [
+  {
+   "name": "cute",
+   "prompts": [
+    "This is a happy pop song."
+   ]
+  },
+  {
+   "name": "energetic",
+   "prompts": [
+    "This is an energetic EDM track."
+   ]
+  },
+  {
+   "name": "chill",
+   "prompts": [
+    "This is a relaxing lo-fi track."
+   ]
+  },
+  {
+   "name": "cool",
+   "prompts": [
+    "This is a hip-hop beat."
+   ]
+  },
+  {
+   "name": "sad",
+   "prompts": [
+    "This is a sad ballad."
+   ]
+  },
+  {
+   "name": "speech",
+   "prompts": [
+    "This is a person talking."
+   ]
+  }
+ ],
+ "dim": 512,
+ "logitScale": 34.0195426940918,
+ "note": "cosine = dot(embedding, labels[i]); softmax(logitScale * cosine) gives probabilities"
+}

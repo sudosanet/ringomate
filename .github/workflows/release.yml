@@ -1,0 +1,130 @@
+name: release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "版（例: 0.1.0、タグは v<版>）"
+        required: true
+
+permissions:
+  contents: write
+
+env:
+  DEVELOPER_DIR: /Applications/Xcode_27.2.app/Contents/Developer
+
+jobs:
+  release:
+    runs-on: xcode-27
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          submodules: true
+
+      - uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: BuildTools/.build
+          key: buildtools-${{ hashFiles('BuildTools/Package.resolved') }}
+
+      - name: Version
+        env:
+          VERSION: ${{ inputs.version }}
+        run: |
+          [[ "$VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]] || { echo "bad version: $VERSION"; exit 1; }
+          echo "VERSION=$VERSION" >> "$GITHUB_ENV"
+
+      - name: Assets
+        env:
+          GH_TOKEN: ${{ secrets.ASSETS_TOKEN }}
+          ASSETS_REPO: ${{ secrets.ASSETS_REPO }}
+        run: scripts/fetch-assets.sh
+
+      - name: Test
+        working-directory: Packages
+        env:
+          # ランナーの ~/.gitconfig の認証を渡すと、公開リポジトリの clone が 403 になる
+          GIT_CONFIG_GLOBAL: /dev/null
+          GIT_CONFIG_NOSYSTEM: "1"
+        run: |
+          swift package plugin --allow-writing-to-package-directory swiftlint --strict
+          swift test --skip AITests --skip 'tellsMusicFromSpeech|tellsVowelsApart|vocalFocusThenLipSync'
+
+      - name: Certificate
+        env:
+          P12_BASE64: ${{ secrets.DEVELOPER_ID_P12 }}
+          P12_PASSWORD: ${{ secrets.DEVELOPER_ID_P12_PASSWORD }}
+          NOTARY_KEY: ${{ secrets.NOTARY_KEY }}
+          NOTARY_KEY_ID: ${{ secrets.NOTARY_KEY_ID }}
+          NOTARY_ISSUER_ID: ${{ secrets.NOTARY_ISSUER_ID }}
+        run: |
+          for v in P12_BASE64 P12_PASSWORD NOTARY_KEY NOTARY_KEY_ID NOTARY_ISSUER_ID; do
+            [[ -n "${!v}" ]] || { echo "Add the DEVELOPER_ID_P12, DEVELOPER_ID_P12_PASSWORD, NOTARY_KEY, NOTARY_KEY_ID and NOTARY_ISSUER_ID secrets."; exit 1; }
+          done
+          echo "$NOTARY_KEY" | base64 -D > "$RUNNER_TEMP/notary.p8"
+          echo "NOTARY=--key $RUNNER_TEMP/notary.p8 --key-id $NOTARY_KEY_ID --issuer $NOTARY_ISSUER_ID" >> "$GITHUB_ENV"
+          cert="$RUNNER_TEMP/developer-id.p12"
+          keychain="$RUNNER_TEMP/sign.keychain-db"
+          keychain_password="$(openssl rand -base64 24)"
+          echo "$P12_BASE64" | base64 -D > "$cert"
+          security create-keychain -p "$keychain_password" "$keychain"
+          security set-keychain-settings -lut 21600 "$keychain"
+          security unlock-keychain -p "$keychain_password" "$keychain"
+          security import "$cert" -k "$keychain" -P "$P12_PASSWORD" -T /usr/bin/codesign -T /usr/bin/security -A
+          security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k "$keychain_password" "$keychain"
+          security list-keychains -d user -s "$keychain"
+          echo "KEYCHAIN=$keychain" >> "$GITHUB_ENV"
+          rm -f "$cert"
+
+      - name: Build
+        env:
+          GIT_CONFIG_GLOBAL: /dev/null
+          GIT_CONFIG_NOSYSTEM: "1"
+        run: |
+          swift run --package-path BuildTools -c release xcodegen
+          xcodebuild -project RingoMate.xcodeproj -scheme RingoMate -configuration Release -derivedDataPath build \
+            MARKETING_VERSION="$VERSION" OTHER_CODE_SIGN_FLAGS="--keychain $KEYCHAIN --timestamp" build
+
+      # Claude Code のプラグイン（mascot-hook を入れたもの）。展開して marketplace として足す
+      - name: Plugin
+        working-directory: Packages
+        env:
+          GIT_CONFIG_GLOBAL: /dev/null
+          GIT_CONFIG_NOSYSTEM: "1"
+        run: |
+          swift build -c release --product mascot-hook
+          bin=../claude-plugin/plugins/ringomate/bin
+          mkdir -p "$bin"
+          cp "$(swift build -c release --show-bin-path)/mascot-hook" "$bin/"
+          codesign --force --sign "Developer ID Application" --keychain "$KEYCHAIN" --options runtime --timestamp -i app.ringomate.mascot-hook "$bin/mascot-hook"
+          codesign --verify --strict "$bin/mascot-hook"
+          mkdir -p "$RUNNER_TEMP/plugin"
+          cp -R ../claude-plugin "$RUNNER_TEMP/plugin/ringomate-claude-plugin"
+          ditto -c -k --norsrc --noextattr --noacl --keepParent "$RUNNER_TEMP/plugin/ringomate-claude-plugin" "../ringomate-claude-plugin-$VERSION.zip"
+
+      # アプリとプラグインを 1 回で公証し、アプリに票を付ける（zip には付けられないので、プラグインはネットで確かめる）。dmg も署名して公証する。票が出なければ stapler で止まる
+      - name: Notarize
+        run: |
+          app=build/Build/Products/Release/RingoMate.app
+          mkdir -p "$RUNNER_TEMP/notarize"
+          ditto -c -k --keepParent "$app" "$RUNNER_TEMP/notarize/RingoMate.zip"
+          cp "ringomate-claude-plugin-$VERSION.zip" "$RUNNER_TEMP/notarize/"
+          ditto -c -k "$RUNNER_TEMP/notarize" "$RUNNER_TEMP/submit.zip"
+          xcrun notarytool submit "$RUNNER_TEMP/submit.zip" $NOTARY --wait
+          xcrun stapler staple "$app"
+
+      - name: DMG
+        run: |
+          mkdir -p "$RUNNER_TEMP/dmg"
+          cp -R build/Build/Products/Release/RingoMate.app "$RUNNER_TEMP/dmg/"
+          ln -s /Applications "$RUNNER_TEMP/dmg/Applications"
+          dmg="ringomate-$VERSION.dmg"
+          hdiutil create -volname RingoMate -srcfolder "$RUNNER_TEMP/dmg" -fs APFS -format UDZO "$dmg"
+          codesign --sign "Developer ID Application" --keychain "$KEYCHAIN" --timestamp "$dmg"
+          xcrun notarytool submit "$dmg" $NOTARY --wait
+          xcrun stapler staple "$dmg"
+          spctl -a -t open --context context:primary-signature -v "$dmg"
+
+      - name: Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "v$VERSION" "ringomate-$VERSION.dmg" "ringomate-claude-plugin-$VERSION.zip" --title "RingoMate $VERSION" --generate-notes

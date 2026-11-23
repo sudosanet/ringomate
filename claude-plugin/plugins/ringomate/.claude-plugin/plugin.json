@@ -1,0 +1,8 @@
+{
+  "name": "ringomate",
+  "description": "The RingoMate desktop mascot reacts to what Claude Code is doing (state goes through hooks and uses no tokens; MCP for intentional performances, /mascot, and passing notes)",
+  "version": "0.2.0",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/sudosanet/ringomate",
+  "repository": "https://github.com/sudosanet/ringomate"
+}
