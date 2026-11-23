@@ -81,10 +81,10 @@ extension AppDelegate {
             let wantsColor = (renderer?.wallpaperTint ?? 0) > 0
             if findThings || wantsColor {
                 desktopThings.tick(screen: overlay.currentScreen, ppu: overlay.pointsPerUnit, findThings: findThings,
-                                   allowed: { CGPreflightScreenCaptureAccess() })
+                                   allowed: { [canCapture] in canCapture })
             }
             desktopThings.apply(to: &world, windows: overlay.windows)
-            freeSpace.apply(to: &world, enabled: ai.avoidBusyScreen && !overlay.hiddenForFullScreen && CGPreflightScreenCaptureAccess())
+            freeSpace.apply(to: &world, enabled: ai.avoidBusyScreen && !overlay.hiddenForFullScreen && canCapture)
             if renderer?.wallpaperColor != desktopThings.color { renderer?.wallpaperColor = desktopThings.color }
         }
         world.env.beat = beatClock.beat()?.advanced(by: stepHere ? 0 : dt)
@@ -185,7 +185,7 @@ extension AppDelegate {
     }
 
     func listen(_ env: inout Mascot.Environment, running: Set<String>) {
-        beatClock.listen(allowed: ai.listenMusic && CGPreflightScreenCaptureAccess() && overlay?.hiddenForFullScreen != true && !env.muted,
+        beatClock.listen(allowed: ai.listenMusic && canCapture && overlay?.hiddenForFullScreen != true && !env.muted,
                          audioPlaying: env.audioPlaying, micApps: micApps)
         if diagnosticsEnabled, Date().timeIntervalSince(lastSenseLog) > 10 {
             lastSenseLog = Date()
@@ -229,5 +229,13 @@ extension AppDelegate {
         discordTitle = ai.windowTitles ? windows.first { $0.owner == "Discord" }?.title : nil
         sensed = (now, env)
         return env
+    }
+}
+
+extension AppDelegate {
+    /// 画面収録の許可。毎フレーム尋ねると TCC への問い合わせが毎回走るので 2 秒ごとに見る
+    var canCapture: Bool {
+        if Date().timeIntervalSince(screenCheck.at) > 2 { screenCheck = (Date(), CGPreflightScreenCaptureAccess()) }
+        return screenCheck.ok
     }
 }

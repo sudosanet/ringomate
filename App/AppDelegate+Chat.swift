@@ -73,7 +73,7 @@ extension AppDelegate {
     }
 
     func frontWindowToLook() -> CGWindowID? {
-        guard ai.lookAtScreen, chatter.canSee, CGPreflightScreenCaptureAccess(), Date().timeIntervalSince(lastLook) > ai.lookInterval,
+        guard ai.lookAtScreen, chatter.canSee, canCapture, Date().timeIntervalSince(lastLook) > ai.lookInterval,
               let app = NSWorkspace.shared.frontmostApplication,
               mayLook(atApp: app.bundleIdentifier, extra: ai.neverLook),
               let window = overlay?.windows.first(where: { $0.pid == app.processIdentifier }) else { return nil }

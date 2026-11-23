@@ -87,6 +87,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     lazy var beatClock = BeatClock(tracker: beats)
     let songService = SongService()
     var updateScheduler: NSBackgroundActivityScheduler?
+    var screenCheck = (at: Date.distantPast, ok: false)
     lazy var moodListener = MusicMoodListener(tracker: beats)
     var micApps: Set<String> = []
     let danceLips = DanceLips()
@@ -148,8 +149,8 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         _ = voice
         chatter.tools = { [weak self] in self?.tools(talking: false) ?? [] }
         // 前面のウィンドウを見る・Mac の音を聞く・壁紙の物を見つけるには画面収録の許可が要る。
-        if ai.needsScreenCapture, !CGPreflightScreenCaptureAccess(), !UserDefaults.standard.bool(forKey: "askedScreenCapture") {
-            UserDefaults.standard.set(true, forKey: "askedScreenCapture")
+        // 尋ねるのは署名ごとに 1 回だけ（2 回目からは macOS が出さない）
+        if ai.needsScreenCapture, !CGPreflightScreenCaptureAccess() {
             CGRequestScreenCaptureAccess()
         }
         let renderer: Renderer
