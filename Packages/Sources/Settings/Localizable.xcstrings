@@ -1,16 +1,6 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "%@ (applies after reloading)" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@（読み込み直しで当たる）"
-          }
-        }
-      }
-    },
     "%@ · Built-in" : {
       "localizations" : {
         "ja" : {
@@ -37,6 +27,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@・ユーザー"
+          }
+        }
+      }
+    },
+    "%@ (applies after reloading)" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@（読み込み直しで当たる）"
           }
         }
       }
@@ -113,12 +113,12 @@
         }
       }
     },
-    "120 fps only while moving; idle is capped at 60" : {
+    "×1 (MMD)" : {
       "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "120 は動いているときだけで、待機は 60 まで"
+            "value" : "×1（MMD）"
           }
         }
       }
@@ -129,6 +129,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "既定は 60Hz。120 と 240 は細かい"
+          }
+        }
+      }
+    },
+    "120 fps only while moving; idle is capped at 60" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "120 は動いているときだけで、待機は 60 まで"
           }
         }
       }
@@ -183,16 +193,6 @@
         }
       }
     },
-    "AI models" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "AI モデル"
-          }
-        }
-      }
-    },
     "About" : {
       "localizations" : {
         "ja" : {
@@ -213,16 +213,6 @@
         }
       }
     },
-    "Assets and libraries" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "使っている素材・ライブラリ"
-          }
-        }
-      }
-    },
     "Activity" : {
       "localizations" : {
         "ja" : {
@@ -233,22 +223,22 @@
         }
       }
     },
-    "Add Folder…" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "フォルダを追加…"
-          }
-        }
-      }
-    },
     "Add a motion after replying" : {
       "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "返事のあとに動きを付ける"
+          }
+        }
+      }
+    },
+    "Add Folder…" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "フォルダを追加…"
           }
         }
       }
@@ -307,6 +297,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "詳細"
+          }
+        }
+      }
+    },
+    "AI models" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AI モデル"
           }
         }
       }
@@ -427,6 +427,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "足りないボーンの候補を AI に出させる"
+          }
+        }
+      }
+    },
+    "Assets and libraries" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使っている素材・ライブラリ"
           }
         }
       }
@@ -687,6 +697,26 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "コメント"
+          }
+        }
+      }
+    },
+    "Connect to Claude Code" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Claude Code とつなぐ"
+          }
+        }
+      }
+    },
+    "Connected. New Claude Code sessions use the plugin." : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "つなぎました。新しく始めた Claude Code のセッションからプラグインが使われます。"
           }
         }
       }
@@ -1381,6 +1411,16 @@
         }
       }
     },
+    "Install Plugin" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "プラグインを入れる"
+          }
+        }
+      }
+    },
     "Installing…" : {
       "localizations" : {
         "ja" : {
@@ -1771,16 +1811,6 @@
         }
       }
     },
-    "MSAA" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "MSAA"
-          }
-        }
-      }
-    },
     "Make" : {
       "localizations" : {
         "ja" : {
@@ -1931,12 +1961,32 @@
         }
       }
     },
+    "MSAA" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MSAA"
+          }
+        }
+      }
+    },
     "Name" : {
       "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "名前"
+          }
+        }
+      }
+    },
+    "name=value, comma-separated. Empty uses defaults (applies after reloading)" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "名前=値 をカンマ区切り。空は既定（読み込み直しで当たる）"
           }
         }
       }
@@ -2161,16 +2211,6 @@
         }
       }
     },
-    "PMX edge color" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "PMX のエッジ色"
-          }
-        }
-      }
-    },
     "Pause" : {
       "localizations" : {
         "ja" : {
@@ -2221,6 +2261,16 @@
         }
       }
     },
+    "PMX edge color" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PMX のエッジ色"
+          }
+        }
+      }
+    },
     "Polite" : {
       "localizations" : {
         "ja" : {
@@ -2261,22 +2311,22 @@
         }
       }
     },
-    "Processing" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "処理"
-          }
-        }
-      }
-    },
     "Privacy Policy" : {
       "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "プライバシーポリシー"
+          }
+        }
+      }
+    },
+    "Processing" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "処理"
           }
         }
       }
@@ -2307,26 +2357,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "今は %@ がマイクを使っているので黙っています"
-          }
-        }
-      }
-    },
-    "RGBA8 for all" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "全部 RGBA8"
-          }
-        }
-      }
-    },
-    "RGBA8 for face and eyes" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "顔・目だけ RGBA8"
           }
         }
       }
@@ -2551,6 +2581,26 @@
         }
       }
     },
+    "RGBA8 for all" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "全部 RGBA8"
+          }
+        }
+      }
+    },
+    "RGBA8 for face and eyes" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "顔・目だけ RGBA8"
+          }
+        }
+      }
+    },
     "Rights to loaded models belong to their authors. Use them according to each model's terms." : {
       "localizations" : {
         "ja" : {
@@ -2567,6 +2617,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "リムライト"
+          }
+        }
+      }
+    },
+    "RingoMate Settings" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RingoMate の設定"
           }
         }
       }
@@ -2817,6 +2877,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "スペキュラ"
+          }
+        }
+      }
+    },
+    "sRGB color management" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "sRGB のカラーマネジメント"
           }
         }
       }
@@ -3367,46 +3437,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "アプリを切り替えた"
-          }
-        }
-      }
-    },
-    "RingoMate Settings" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "RingoMate の設定"
-          }
-        }
-      }
-    },
-    "name=value, comma-separated. Empty uses defaults (applies after reloading)" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "名前=値 をカンマ区切り。空は既定（読み込み直しで当たる）"
-          }
-        }
-      }
-    },
-    "sRGB color management" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "sRGB のカラーマネジメント"
-          }
-        }
-      }
-    },
-    "×1 (MMD)" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "×1（MMD）"
           }
         }
       }

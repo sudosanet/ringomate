@@ -52,6 +52,22 @@ targets:
           done
           # アセットデータはアプリに入れない（起動してから R2 から取る。Listen の SongSync）
           rm -rf "${dest}/songs"
+      # Claude Code のプラグイン。設定の「プラグインを入れる」でこのフォルダを Claude Code に足す（その場から読まれる）
+      - name: Claude Code plugin
+        basedOnDependencyAnalysis: false
+        script: |
+          set -euo pipefail
+          dest="${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/claude-plugin"
+          rm -rf "${dest}" && cp -R "${SRCROOT}/claude-plugin" "${dest}"
+          bin="${dest}/plugins/ringomate/bin"
+          rm -rf "${bin}" && mkdir -p "${bin}"
+          # Xcode の環境（SDK・コンパイラの指定）を SwiftPM に渡さない
+          run() { env -i HOME="${HOME}" PATH="/usr/bin:/bin:/usr/sbin:/sbin" DEVELOPER_DIR="${DEVELOPER_DIR}" \
+            GIT_CONFIG_GLOBAL="${GIT_CONFIG_GLOBAL:-${HOME}/.gitconfig}" GIT_CONFIG_NOSYSTEM="${GIT_CONFIG_NOSYSTEM:-}" \
+            swift "$@" --package-path "${SRCROOT}/Packages" -c release; }
+          run build --product mascot-hook
+          cp "$(run build --show-bin-path)/mascot-hook" "${bin}/"
+          codesign --force --sign "${EXPANDED_CODE_SIGN_IDENTITY:--}" ${OTHER_CODE_SIGN_FLAGS:-} --options runtime -i app.ringomate.mascot-hook "${bin}/mascot-hook"
     dependencies:
       - package: MascotPackages
         product: Overlay

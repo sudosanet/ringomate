@@ -38,7 +38,7 @@ struct AITab: View {
             } header: {
                 Text("Motion and expressions", bundle: #bundle)
             }
-            ClaudeCodeSection()
+            ClaudeCodeSection(connect: actions.connectClaudeCode)
         }
         .formStyle(.grouped)
         .onAppear {
@@ -198,11 +198,31 @@ private struct PermissionWarning: View {
 }
 
 private struct ClaudeCodeSection: View {
+    let connect: () async -> String?
+    @State private var connecting = false
+    @State private var result: (ok: Bool, text: String)?
     @AppStorage(SettingsKey.answerPermissions) private var answer = false
     @AppStorage(SettingsKey.permissionKinds) private var kinds = PermissionKind.allCases.map(\.rawValue).joined(separator: ",")
 
     var body: some View {
         Section {
+            HStack {
+                label("Connect to Claude Code", "link")
+                Spacer()
+                Button {
+                    connecting = true
+                    Task {
+                        let error = await connect()
+                        result = error.map { (false, $0) } ?? (true, String(localized: "Connected. New Claude Code sessions use the plugin.", bundle: #bundle))
+                        connecting = false
+                    }
+                } label: { Text("Install Plugin", bundle: #bundle) }
+                .disabled(connecting)
+            }
+            if let result {
+                Label(result.text, systemImage: result.ok ? "checkmark.circle.fill" : "exclamationmark.triangle.fill")
+                    .font(.callout).foregroundStyle(result.ok ? .green : .orange)
+            }
             toggle(SettingsKey.permissionChat, "Announce pending approvals", "exclamationmark.bubble", nil)
             Toggle(isOn: $answer) {
                 label("Answer approvals in the speech bubble", "checkmark.bubble")

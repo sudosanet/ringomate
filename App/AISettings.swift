@@ -1,3 +1,4 @@
+import Agent
 import AI
 import Foundation
 import FoundationModels
@@ -109,6 +110,7 @@ extension SettingsActions {
         a.memorySummary = { [weak app] in app?.conversation.summary ?? "" }
         a.setMemorySummary = { [weak app] in app?.conversation.setSummary($0) }
         a.forgetMemory = { [weak app] in app?.conversation.forget() }
+        a.connectClaudeCode = { await ClaudePlugin.connect(marketplace: Bundle.main.bundleURL.appending(path: "Contents/Resources/claude-plugin")) }
         a.aiStatus = { [weak app] in
             guard let app else { return [] }
             return AISettings.status(conversation: app.conversation, canSee: app.chatter.canSee, readNotifications: app.ai.readNotifications)

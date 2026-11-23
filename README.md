@@ -14,12 +14,8 @@ Apple Silicon の Mac のデスクトップに 3D のキャラクターを住ま
 
 ### Claude Code のプラグイン
 
-同じ Releases の `ringomate-claude-plugin-<版>.zip` を展開し、Claude Code にマーケットプレイスとして足して入れる。
-
-```sh
-claude plugin marketplace add ~/Downloads/ringomate-claude-plugin
-claude plugin install ringomate@ringomate
-```
+プラグインはアプリに入っている。設定の「AI」→「Claude Code とつなぐ」の「プラグインを入れる」を押すと、`claude` の CLI でアプリの中のプラグインを足す。
+プラグインはアプリの中から読まれるので、アプリをアップデートすればプラグインも新しくなる。
 
 ## 必要なもの（ビルドする場合）
 
@@ -50,8 +46,7 @@ GitHub の Release も同じ自己署名を使う。リポジトリの Actions s
 - メニューバーのアイコンから: キャラクターを隠す、話しかける（Talk…）、設定（⌘,、モデルの切り替え・大きさ・見た目など）。
 - キャラクター: 頭をクリックすると笑って跳ねる、手は振り返す、ドラッグでつまむ、撫でると喜ぶ。
 - Claude Code: プラグイン（上のインストール）を入れると、フックで状態が届き、MCP（`say`・`perform`・`express`・`get_state`）と
-  `/mascot` で演出を頼める。ソースから作るときは `cd Packages && swift build -c release --product mascot-hook` で作ったものを
-  `claude-plugin/plugins/ringomate/bin/` に置き、`claude-plugin/` をマーケットプレイスとして足す。
+  `/mascot` で演出を頼める。ソースから作ったアプリでも、ビルドのときに `mascot-hook` を作ってアプリに入れる。
 - ショートカット・Siri: 「RingoMate に話しかける」「RingoMate に仕草をさせる」「RingoMate を隠す」。
 - 曲に合わせて踊る: Mac で流している曲を聞き分けて、その曲の振り付けで踊る。
 

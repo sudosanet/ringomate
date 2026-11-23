@@ -84,32 +84,13 @@ jobs:
           xcodebuild -project RingoMate.xcodeproj -scheme RingoMate -configuration Release -derivedDataPath build \
             MARKETING_VERSION="$VERSION" OTHER_CODE_SIGN_FLAGS="--keychain $KEYCHAIN --timestamp" build
 
-      # Claude Code のプラグイン（mascot-hook を入れたもの）。展開して marketplace として足す
-      - name: Plugin
-        working-directory: Packages
-        env:
-          GIT_CONFIG_GLOBAL: /dev/null
-          GIT_CONFIG_NOSYSTEM: "1"
-        run: |
-          swift build -c release --product mascot-hook
-          bin=../claude-plugin/plugins/ringomate/bin
-          mkdir -p "$bin"
-          cp "$(swift build -c release --show-bin-path)/mascot-hook" "$bin/"
-          codesign --force --sign "Developer ID Application" --keychain "$KEYCHAIN" --options runtime --timestamp -i app.ringomate.mascot-hook "$bin/mascot-hook"
-          codesign --verify --strict "$bin/mascot-hook"
-          mkdir -p "$RUNNER_TEMP/plugin"
-          cp -R ../claude-plugin "$RUNNER_TEMP/plugin/ringomate-claude-plugin"
-          ditto -c -k --norsrc --noextattr --noacl --keepParent "$RUNNER_TEMP/plugin/ringomate-claude-plugin" "../ringomate-claude-plugin-$VERSION.zip"
-
-      # アプリとプラグインを 1 回で公証し、アプリに票を付ける（zip には付けられないので、プラグインはネットで確かめる）。dmg も署名して公証する。票が出なければ stapler で止まる
+      # アプリ（中の Claude Code のプラグインごと）を公証して票を付ける。dmg も署名して公証する。票が出なければ stapler で止まる
       - name: Notarize
         run: |
           app=build/Build/Products/Release/RingoMate.app
-          mkdir -p "$RUNNER_TEMP/notarize"
-          ditto -c -k --keepParent "$app" "$RUNNER_TEMP/notarize/RingoMate.zip"
-          cp "ringomate-claude-plugin-$VERSION.zip" "$RUNNER_TEMP/notarize/"
-          ditto -c -k "$RUNNER_TEMP/notarize" "$RUNNER_TEMP/submit.zip"
-          xcrun notarytool submit "$RUNNER_TEMP/submit.zip" $NOTARY --wait
+          codesign --verify --strict --deep "$app"
+          ditto -c -k --keepParent "$app" "$RUNNER_TEMP/RingoMate.zip"
+          xcrun notarytool submit "$RUNNER_TEMP/RingoMate.zip" $NOTARY --wait
           xcrun stapler staple "$app"
 
       - name: DMG
@@ -128,4 +109,4 @@ jobs:
       - name: Release
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh release create "v$VERSION" RingoMate.dmg "ringomate-claude-plugin-$VERSION.zip" --title "RingoMate $VERSION" --generate-notes
+        run: gh release create "v$VERSION" RingoMate.dmg --title "RingoMate $VERSION" --generate-notes

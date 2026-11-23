@@ -16,7 +16,7 @@ xcodebuild -project RingoMate.xcodeproj -scheme RingoMate -derivedDataPath build
 ```
 
 - 署名: Debug は `Config/Local.xcconfig`（コミットしない）の `DEVELOPMENT_TEAM`（Apple Development）。Release は Developer ID（チーム 4RU8L6U52Z。p12 と公証の鍵はリポジトリに置かない）。署名を固定しないとビルドのたびに macOS の許可（画面収録など）が外れる。
-- Claude Code のプラグインの `mascot-hook`: `cd Packages && swift build -c release --product mascot-hook` → `claude-plugin/plugins/ringomate/bin/` へ。
+- Claude Code のプラグイン: ビルドのときに `mascot-hook` を作って署名し、`claude-plugin/` ごとアプリの Resources に入れる（project.yml）。設定のボタンで `claude plugin` に足す（Agent の `ClaudePlugin`）。
 
 ## 構成
 

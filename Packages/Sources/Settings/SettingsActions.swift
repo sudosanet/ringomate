@@ -59,6 +59,8 @@ public struct SettingsActions {
     public var previewCandidate: () -> Void = {}
     public var acceptCandidate: () -> Void = {}
     public var discardCandidate: () -> Void = {}
+    /// アプリに入れたプラグインを Claude Code に入れる。失敗したときはその理由
+    public var connectClaudeCode: () async -> String? = { nil }
 
     public init(loadModel: @escaping (String) -> Void, reload: @escaping () -> Void,
                 diagnostics: @escaping () -> [String], details: @escaping (String) async -> ModelDetails?,
