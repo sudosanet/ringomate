@@ -47,7 +47,7 @@ public final class Updater: Sendable {
     static func newer(_ latest: Latest, than current: String) -> Release? {
         let version = latest.tag_name.hasPrefix("v") ? String(latest.tag_name.dropFirst()) : latest.tag_name
         guard version.compare(current, options: .numeric) == .orderedDescending,
-              let dmg = latest.assets.first(where: { $0.name == "ringomate-\(version).dmg" }) else { return nil }
+              let dmg = latest.assets.first(where: { $0.name == "RingoMate.dmg" }) else { return nil }
         return Release(version: version, dmg: dmg.browser_download_url, page: latest.html_url)
     }
 

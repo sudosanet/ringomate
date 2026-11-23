@@ -117,7 +117,8 @@ jobs:
           mkdir -p "$RUNNER_TEMP/dmg"
           cp -R build/Build/Products/Release/RingoMate.app "$RUNNER_TEMP/dmg/"
           ln -s /Applications "$RUNNER_TEMP/dmg/Applications"
-          dmg="ringomate-$VERSION.dmg"
+          # 名前に版を入れない（releases/latest/download/RingoMate.dmg で最新が落ちる）
+          dmg=RingoMate.dmg
           hdiutil create -volname RingoMate -srcfolder "$RUNNER_TEMP/dmg" -fs APFS -format UDZO "$dmg"
           codesign --sign "Developer ID Application" --keychain "$KEYCHAIN" --timestamp "$dmg"
           xcrun notarytool submit "$dmg" $NOTARY --wait
@@ -127,4 +128,4 @@ jobs:
       - name: Release
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh release create "v$VERSION" "ringomate-$VERSION.dmg" "ringomate-claude-plugin-$VERSION.zip" --title "RingoMate $VERSION" --generate-notes
+        run: gh release create "v$VERSION" RingoMate.dmg "ringomate-claude-plugin-$VERSION.zip" --title "RingoMate $VERSION" --generate-notes

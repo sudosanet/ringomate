@@ -9,9 +9,9 @@ private func latest(_ tag: String, _ assets: [String]) throws -> Updater.Latest 
 }
 
 @Test func picksOnlyNewerReleasesWithADmg() throws {
-    #expect(Updater.newer(try latest("v0.0.10", ["ringomate-0.0.10.dmg", "ringomate-claude-plugin-0.0.10.zip"]), than: "0.0.9")?.dmg.lastPathComponent == "ringomate-0.0.10.dmg")
-    #expect(Updater.newer(try latest("v0.0.9", ["ringomate-0.0.9.dmg"]), than: "0.0.9") == nil)
-    #expect(Updater.newer(try latest("v0.0.8", ["ringomate-0.0.8.dmg"]), than: "0.0.9") == nil)
+    #expect(Updater.newer(try latest("v0.0.10", ["RingoMate.dmg", "ringomate-claude-plugin-0.0.10.zip"]), than: "0.0.9")?.dmg.lastPathComponent == "RingoMate.dmg")
+    #expect(Updater.newer(try latest("v0.0.9", ["RingoMate.dmg"]), than: "0.0.9") == nil)
+    #expect(Updater.newer(try latest("v0.0.8", ["RingoMate.dmg"]), than: "0.0.9") == nil)
     #expect(Updater.newer(try latest("v0.1.0", ["ringomate-claude-plugin-0.1.0.zip"]), than: "0.0.9") == nil)
 }
 
