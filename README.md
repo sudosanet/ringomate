@@ -33,13 +33,13 @@ xcodebuild -project RingoMate.xcodeproj -scheme RingoMate -derivedDataPath build
 `assets/tsukuyomi/` に取る（手で置くなら `01 通常版（VRM）/【輪郭線なし】…（通常版）.vrm` を `Tsukuyomi.vrm` とし、`ReadMe.txt`・`利用規約.txt` も同じフォルダへ）。
 
 Debug は `Config/Local.xcconfig` に `DEVELOPMENT_TEAM = <チーム ID>` を書く（コミットしない）。Apple Development の証明書が同じなら、手元の再ビルドで画面収録などの許可は残る。
-Release はキーチェーンにある自己署名「RingoMate」で署名する。証明書のファイルはリポジトリに入れない。
+Release は Developer ID で署名し、Apple の公証を通す（`.github/workflows/release.yml`）。証明書と鍵のファイルはリポジトリに入れない。
 テストは `cd Packages && swift test`。
 
-GitHub の Release も同じ自己署名を使う。リポジトリの Actions secrets に次を入れる。
+リリースのワークフローは、リポジトリの Actions secrets の次を使う。
 
-- `RINGOMATE_P12`: 証明書の p12 を base64 した文字列
-- `RINGOMATE_P12_PASSWORD`: その p12 のパスワード
+- `DEVELOPER_ID_P12`・`DEVELOPER_ID_P12_PASSWORD`: Developer ID Application の証明書（秘密鍵ごと）の p12 を base64 した文字列と、そのパスワード
+- `NOTARY_KEY`・`NOTARY_KEY_ID`・`NOTARY_ISSUER_ID`: 公証に使う App Store Connect API キー（p8 を base64）と、その Key ID・Issuer ID
 
 ## 使い方
 
