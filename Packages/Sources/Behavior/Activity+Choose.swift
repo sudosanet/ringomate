@@ -135,7 +135,7 @@ extension Mascot {
 
     func finish(_ choice: Choice, body: Body, surfaces: [Surface], world: World, prop: Prop,
                         randomSurface: () -> Surface?) -> Activity {
-        let margin = body.height
+        let margin = footprint(body) / 2
         switch choice {
         case .stand:
             if random() < 0.4 { return .gesturing(index: pickGesture(), elapsed: 0) }
@@ -162,8 +162,10 @@ extension Mascot {
                 x = body.root.x + (body.root.x - margin > span / 2 ? -1 : 1) * body.height * 2
                 x = min(max(x, margin), margin + span)
             }
-            if !world.busy.isEmpty, let best = freestX(groundCandidates(body: body, world: world), body: body, world: world),
-               busyness(best, body: body, world: world) < busyness(x, body: body, world: world) {
+            if !world.busy.isEmpty, isBusy(x, body: body, world: world) {
+                guard let best = freestX(groundCandidates(body: body, world: world), body: body, world: world) else {
+                    return .standing(left: 4)
+                }
                 x = best
             }
             return .walking(to: x, then: nil)
@@ -190,7 +192,11 @@ extension Mascot {
         case .seekAttention:
             let cursor = lastPointer?.x ?? body.root.x
             let side: Float = cursor > body.root.x ? -1 : 1
-            let x = min(max(cursor + side * body.height * 0.5, margin), max(world.width - margin, margin))
+            var x = min(max(cursor + side * body.height * 0.5, margin), max(world.width - margin, margin))
+            if isBusy(x, body: body, world: world) {
+                x = groundCandidates(body: body, world: world).filter { !isBusy($0, body: body, world: world) }
+                    .min { abs($0 - cursor) < abs($1 - cursor) } ?? body.root.x
+            }
             pendingGesture = 0
             needs.attention -= 0.3
             if abs(x - body.root.x) < body.height * 1.5 {

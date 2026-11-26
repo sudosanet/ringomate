@@ -225,9 +225,11 @@ extension Mascot {
         guard let w = agent.window else { return nil }
         let margin = body.height * 0.6
         let half = body.height / 2
+        _ = shouldWaitForSpace(world)
         return [w.lowerBound - margin, w.upperBound + margin]
             .filter { $0 >= margin && $0 <= world.width - margin }
             .filter { x in !agent.blocked.contains { $0.overlaps(x - half...x + half) } }
+            .filter { !isBusy($0, body: body, world: world) }
             .min { a, b in
                 let (ba, bb) = (busyness(a, body: body, world: world), busyness(b, body: body, world: world))
                 return ba != bb ? ba < bb : abs(a - body.root.x) < abs(b - body.root.x)

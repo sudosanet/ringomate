@@ -160,7 +160,7 @@ extension AppDelegate {
         }
         body = .init(root: root, grounded: out.grounded, height: height, motionDone: out.motionDone,
                      walkSpeed: walkSpeed, seatHeight: seatHeight, calmWalkSpeed: calmWalkSpeed,
-                     carryWalkSpeed: carryWalkSpeed)
+                     carryWalkSpeed: carryWalkSpeed, width: out.bones > 0 ? out.boundsMax.x - out.boundsMin.x : 0)
         body.onLedge = out.onLedge
         renderer?.groundShadow = groundShadowStrength > 0 && !intent.hidden ? out.floor.map { f in
             SIMD3(out.root.x, f, groundShadowStrength * max(0, 1 - (out.root.y - f) / max(height * 0.3, 1e-3)))

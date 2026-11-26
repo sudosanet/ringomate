@@ -30,6 +30,8 @@ extension Mascot {
         public var root: SIMD2<Float>
         public var grounded: Bool
         public var height: Float
+        /// ボーンの横の広がり。0 なら分からない。
+        public var width: Float = 0
         /// 1 回きりのモーションを再生し終えた。
         public var motionDone = false
         /// 0 なら歩かない。
@@ -45,7 +47,8 @@ extension Mascot {
 
         public init(root: SIMD2<Float>, grounded: Bool, height: Float, motionDone: Bool = false,
                     walkSpeed: Float = 0, seatHeight: Float = 0, calmWalkSpeed: Float = 0,
-                    carryWalkSpeed: Float = 0) {
+                    carryWalkSpeed: Float = 0, width: Float = 0) {
+            self.width = width
             self.calmWalkSpeed = calmWalkSpeed
             self.carryWalkSpeed = carryWalkSpeed
             self.root = root
